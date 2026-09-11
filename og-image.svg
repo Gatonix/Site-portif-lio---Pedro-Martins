@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Pedro Martins — Design estratégico e sites">
+  <defs><radialGradient id="g" cx="82%" cy="20%" r="75%"><stop offset="0" stop-color="#4169E1" stop-opacity=".65"/><stop offset="1" stop-color="#090909" stop-opacity="0"/></radialGradient></defs>
+  <rect width="1200" height="630" fill="#090909"/><rect width="1200" height="630" fill="url(#g)"/>
+  <circle cx="920" cy="310" r="190" fill="none" stroke="#6E8CFF" stroke-opacity=".45"/><circle cx="920" cy="310" r="135" fill="none" stroke="#fff" stroke-opacity=".20"/><circle cx="920" cy="310" r="78" fill="#2F4CDD"/>
+  <text x="95" y="215" fill="#fff" font-family="Arial, sans-serif" font-size="32" font-weight="700">PEDRO MARTINS</text>
+  <text x="95" y="300" fill="#fff" font-family="Arial, sans-serif" font-size="62" font-weight="700">Design estratégico</text>
+  <text x="95" y="372" fill="#9FB4FF" font-family="Arial, sans-serif" font-size="62" font-weight="700">&amp; sites</text>
+  <text x="95" y="455" fill="#C8C8C8" font-family="Arial, sans-serif" font-size="24">Identidade visual, sites e motion design.</text>
+</svg>

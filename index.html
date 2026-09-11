@@ -4,6 +4,33 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pedro Martins — Design</title>
+<meta name="description" content="Pedro Martins cria identidades visuais, sites e motion design para marcas que querem comunicar valor e se tornar referência no seu mercado.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#090909">
+<link rel="canonical" href="https://pedrobranding.online/">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Pedro Martins">
+<meta property="og:title" content="Pedro Martins — Design estratégico &amp; sites">
+<meta property="og:description" content="Identidades visuais, sites e motion design para marcas que querem comunicar valor e se tornar referência.">
+<meta property="og:url" content="https://pedrobranding.online/">
+<meta property="og:image" content="https://pedrobranding.online/og-image.svg">
+<meta property="og:image:alt" content="Pedro Martins — Design estratégico &amp; sites">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Pedro Martins — Design estratégico &amp; sites">
+<meta name="twitter:description" content="Identidades visuais, sites e motion design para marcas que querem comunicar valor e se tornar referência.">
+<meta name="twitter:image" content="https://pedrobranding.online/og-image.svg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Pedro Martins",
+  "url": "https://pedrobranding.online/",
+  "description": "Design estratégico, identidade visual, sites e motion design para marcas.",
+  "telephone": "+55-32-98425-5466",
+  "sameAs": ["https://www.instagram.com/ovisinario.br/"]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -62,6 +89,13 @@
   img,svg{ display:block; max-width:100%; }
   a{ color:inherit; }
   ul{ list-style:none; }
+  .skip-link{
+    position:fixed; left:16px; top:16px; z-index:1000;
+    padding:12px 16px; border-radius:10px; background:var(--text); color:var(--bg);
+    font-weight:700; text-decoration:none; transform:translateY(-180%);
+  }
+  .skip-link:focus{ transform:translateY(0); }
+  :focus-visible{ outline:3px solid var(--primary-200); outline-offset:4px; }
 
   .reveal{ opacity:0; will-change:transform, opacity, filter; }
 
@@ -450,11 +484,18 @@
   .faq-item:last-child{ border-bottom:1px solid var(--border); }
   .faq-q{
     display:flex;
+    width:100%;
     justify-content:space-between;
     align-items:center;
     gap:16px;
     font-size:17px;
     font-weight:600;
+    font-family:inherit;
+    color:inherit;
+    text-align:left;
+    background:transparent;
+    border:0;
+    cursor:pointer;
   }
   .faq-q .plus{
     font-size:20px;
@@ -540,7 +581,9 @@
 </head>
 <body>
 
-<nav>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+
+<nav aria-label="Navegação principal">
   <div class="wrap">
     <div class="brand"><span class="dot"></span>Pedro Martins</div>
     <div class="nav-links">
@@ -553,6 +596,7 @@
   </div>
 </nav>
 
+<main id="conteudo">
 <header class="hero">
   <div class="hero-glow"></div>
   <div class="wrap hero-grid">
@@ -727,20 +771,20 @@
     </div>
     <div class="faq-list reveal" data-reveal="card">
       <div class="faq-item">
-        <div class="faq-q"><span>Quanto tempo leva um projeto?</span><span class="plus">+</span></div>
-        <div class="faq-a">O prazo varia conforme o escopo. Uma identidade visual costuma levar de 2 a 3 semanas; projetos que incluem site geralmente levam de 4 a 6 semanas.</div>
+        <button type="button" class="faq-q" aria-expanded="false" aria-controls="faq-a-1"><span>Quanto tempo leva um projeto?</span><span class="plus" aria-hidden="true">+</span></button>
+        <div class="faq-a" id="faq-a-1">O prazo varia conforme o escopo. Uma identidade visual costuma levar de 2 a 3 semanas; projetos que incluem site geralmente levam de 4 a 6 semanas.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q"><span>Você atende empresas de qualquer segmento?</span><span class="plus">+</span></div>
-        <div class="faq-a">Sim. Já trabalhei com negócios de alimentação, fitness, imobiliário, tecnologia, moda e serviços — sempre adaptando o direcionamento ao público de cada marca.</div>
+        <button type="button" class="faq-q" aria-expanded="false" aria-controls="faq-a-2"><span>Você atende empresas de qualquer segmento?</span><span class="plus" aria-hidden="true">+</span></button>
+        <div class="faq-a" id="faq-a-2">Sim. Já trabalhei com negócios de alimentação, fitness, imobiliário, tecnologia, moda e serviços — sempre adaptando o direcionamento ao público de cada marca.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q"><span>Como funciona o pagamento?</span><span class="plus">+</span></div>
-        <div class="faq-a">Após o briefing, envio uma proposta com escopo, prazo e investimento. O pagamento é dividido em etapas: uma entrada no início do projeto e o restante na entrega.</div>
+        <button type="button" class="faq-q" aria-expanded="false" aria-controls="faq-a-3"><span>Como funciona o pagamento?</span><span class="plus" aria-hidden="true">+</span></button>
+        <div class="faq-a" id="faq-a-3">Após o briefing, envio uma proposta com escopo, prazo e investimento. O pagamento é dividido em etapas: uma entrada no início do projeto e o restante na entrega.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q"><span>Depois da entrega, tem suporte?</span><span class="plus">+</span></div>
-        <div class="faq-a">Sim. Todo projeto inclui um período de acompanhamento pós-entrega para dúvidas e ajustes previstos no escopo.</div>
+        <button type="button" class="faq-q" aria-expanded="false" aria-controls="faq-a-4"><span>Depois da entrega, tem suporte?</span><span class="plus" aria-hidden="true">+</span></button>
+        <div class="faq-a" id="faq-a-4">Sim. Todo projeto inclui um período de acompanhamento pós-entrega para dúvidas e ajustes previstos no escopo.</div>
       </div>
     </div>
   </div>
@@ -755,6 +799,7 @@
     <a href="https://wa.me/5532984255466" target="_blank" rel="noopener" class="btn btn-primary reveal" data-reveal="head">Conversar sobre meu projeto</a>
   </div>
 </section>
+</main>
 
 <footer>
   <div class="wrap">
@@ -783,7 +828,7 @@
     </div>
     <div class="footer-bottom">
       <span>© 2026 Pedro Martins. Todos os direitos reservados.</span>
-      <span>Feito para transformar percepção em valor.</span>
+      <span><a href="privacidade.html">Política de privacidade</a> · Feito para transformar percepção em valor.</span>
     </div>
   </div>
 </footer>
@@ -843,10 +888,12 @@ document.querySelectorAll(".faq-item").forEach(function(item){
     var isOpen = item.classList.contains("open");
     document.querySelectorAll(".faq-item.open").forEach(function(o){
       o.classList.remove("open");
+      o.querySelector(".faq-q").setAttribute("aria-expanded", "false");
       o.querySelector(".faq-a").style.maxHeight = null;
     });
     if(!isOpen){
       item.classList.add("open");
+      item.querySelector(".faq-q").setAttribute("aria-expanded", "true");
       answer.style.maxHeight = answer.scrollHeight + "px";
     }
   });
