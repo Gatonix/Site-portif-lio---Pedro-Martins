@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://pedrobranding.online/sitemap.xml
+Sitemap: https://pedrobranding.com.br/sitemap.xml

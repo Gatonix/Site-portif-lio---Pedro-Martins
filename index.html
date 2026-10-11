@@ -3,800 +3,534 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pedro Martins — Design</title>
-<meta name="description" content="Pedro Martins cria identidades visuais, sites e motion design para marcas que querem comunicar valor e se tornar referência no seu mercado.">
+<title>VICE CO — Agência de Branding &amp; Design</title>
+<meta name="description" content="VICE CO, agência de branding e design de Pedro Martins. Identidade visual para negócios de qualquer segmento: logotipo, símbolo, tipografia e cor.">
 <meta name="robots" content="index, follow">
-<meta name="theme-color" content="#090909">
-<link rel="canonical" href="https://pedrobranding.online/">
+<meta name="theme-color" content="#0A0A0A">
+<link rel="canonical" href="https://pedrobranding.com.br/">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Pedro Martins">
-<meta property="og:title" content="Pedro Martins — Design estratégico &amp; sites">
-<meta property="og:description" content="Identidades visuais, sites e motion design para marcas que querem comunicar valor e se tornar referência.">
-<meta property="og:url" content="https://pedrobranding.online/">
-<meta property="og:image" content="https://pedrobranding.online/og-image.svg">
-<meta property="og:image:alt" content="Pedro Martins — Design estratégico &amp; sites">
+<meta property="og:site_name" content="VICE CO / Pedro Martins">
+<meta property="og:title" content="VICE CO — Agência de Branding &amp; Design">
+<meta property="og:description" content="Logotipo, símbolo, tipografia e cor pensados para uso real.">
+<meta property="og:url" content="https://pedrobranding.com.br/">
+<meta property="og:image" content="https://pedrobranding.com.br/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Pedro Martins — Design estratégico &amp; sites">
-<meta name="twitter:description" content="Identidades visuais, sites e motion design para marcas que querem comunicar valor e se tornar referência.">
-<meta name="twitter:image" content="https://pedrobranding.online/og-image.svg">
+<meta name="twitter:image" content="https://pedrobranding.com.br/og-image.png">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  "name": "Pedro Martins",
-  "url": "https://pedrobranding.online/",
-  "description": "Design estratégico, identidade visual, sites e motion design para marcas.",
+  "name": "VICE CO",
+  "founder": {"@type":"Person","name":"Pedro Martins","jobTitle":"CEO"},
+  "url": "https://pedrobranding.com.br/",
+  "description": "Identidade visual para negócios de qualquer segmento.",
   "telephone": "+55-32-98425-5466",
-  "sameAs": ["https://www.instagram.com/ovisinario.br/"]
+  "image": "https://pedrobranding.com.br/og-image.png",
+  "areaServed": "BR",
+  "serviceType": ["Branding","Identidade visual","Design de logotipo"],
+  "sameAs": ["https://www.instagram.com/ovisinario.br/", "https://www.behance.net/Pedrodesignn"]
 }
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <style>
   :root{
-    --bg:#090909;
-    --surface:#111111;
-    --surface-2:#181818;
-
-    --primary-100:#C9D6FF;
-    --primary-200:#9FB4FF;
-    --primary-300:#6E8CFF;
-    --primary-400:#4169E1;
-    --primary-500:#2F4CDD;
-    --primary-600:#24399E;
-
-    --secondary-300:#3B4C77;
-    --secondary-400:#2A3655;
-    --secondary-500:#1B2338;
-
-    --text:#FFFFFF;
-    --text-2:#C8C8C8;
-    --text-3:#8A8A8A;
-
+    --bg:#0A0A0A;
+    --surface:#121212;
+    --surface-2:#1A1A1A;
+    --y:#EFE13E;          /* amarelo VICE (flyers) */
+    --y-2:#EFE13E;        /* amarelo do isotipo */
+    --y-soft:rgba(239,225,62,.12);
+    --ink:#0A0A0A;
+    --text:#F2F2F2;
+    --text-2:#BDBDBD;
+    --text-3:#7C7C7C;
     --border:rgba(255,255,255,.08);
-    --border-hover:rgba(255,255,255,.18);
-
-    --radius-sm:12px;
-    --radius-md:18px;
-    --radius-lg:24px;
-    --radius-xl:28px;
-    --radius-btn:14px;
-
-    --shadow-card:0 12px 40px rgba(0,0,0,.45);
-    --shadow-floating:0 24px 80px rgba(0,0,0,.65);
-    --shadow-glow:0 0 80px rgba(47,76,221,.22);
-    --shadow-hover:0 20px 60px rgba(47,76,221,.18);
-
+    --border-y:rgba(239,225,62,.35);
     --ease:cubic-bezier(.22,.61,.36,1);
-    --t-fast:180ms;
-    --t-normal:250ms;
+    --wide:'Archivo', sans-serif;
   }
-
   *{ box-sizing:border-box; margin:0; padding:0; }
   html{ scroll-behavior:smooth; }
   body{
-    background:var(--bg);
-    color:var(--text);
-    font-family:'Inter', sans-serif;
-    line-height:1.6;
-    -webkit-font-smoothing:antialiased;
-    overflow-x:hidden;
+    background:var(--bg); color:var(--text);
+    font-family:'Inter', sans-serif; line-height:1.6;
+    -webkit-font-smoothing:antialiased; overflow-x:hidden;
+  }
+  /* grão sutil, como nos flyers */
+  body::after{
+    content:""; position:fixed; inset:0; pointer-events:none; z-index:999; opacity:.06;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   }
   img,svg{ display:block; max-width:100%; }
   a{ color:inherit; }
   ul{ list-style:none; }
-  .skip-link{
-    position:fixed; left:16px; top:16px; z-index:1000;
-    padding:12px 16px; border-radius:10px; background:var(--text); color:var(--bg);
-    font-weight:700; text-decoration:none; transform:translateY(-180%);
-  }
-  .skip-link:focus{ transform:translateY(0); }
-  :focus-visible{ outline:3px solid var(--primary-200); outline-offset:4px; }
+  .skip-link{ position:fixed; left:16px; top:16px; z-index:1000; padding:12px 16px; background:var(--y); color:var(--ink); font-weight:700; text-decoration:none; transform:translateY(-180%); }
+  .skip-link:focus{ transform:none; }
+  :focus-visible{ outline:3px solid var(--y); outline-offset:4px; }
+  .reveal{ opacity:0; }
 
-  .reveal{ opacity:0; will-change:transform, opacity, filter; }
-
-  .wrap{
-    max-width:1280px;
-    margin:0 auto;
-    padding:0 24px;
-    position:relative;
-    z-index:1;
-  }
-  @media(min-width:900px){ .wrap{ padding:0 80px; } }
-  @media(min-width:1300px){ .wrap{ padding:0 120px; } }
+  .wrap{ max-width:1280px; margin:0 auto; padding:0 20px; position:relative; z-index:1; }
+  @media(min-width:900px){ .wrap{ padding:0 64px; } }
 
   section{ padding:88px 0; position:relative; }
-  @media(min-width:900px){ section{ padding:140px 0; } }
+  @media(min-width:900px){ section{ padding:128px 0; } }
 
-  .eyebrow{
-    display:inline-flex;
-    align-items:center;
-    gap:8px;
-    font-size:13px;
-    color:var(--primary-300);
-    font-weight:600;
-    margin-bottom:20px;
+  .wide{ font-family:var(--wide); font-stretch:125%; text-transform:uppercase; letter-spacing:-.01em; }
+  .tag-y{
+    display:inline-block; font-family:var(--wide); font-stretch:125%; font-weight:700;
+    font-size:12px; text-transform:uppercase; letter-spacing:.04em;
+    background:var(--y); color:var(--ink); padding:4px 12px; border-radius:0;
   }
-  .eyebrow::before{ content:""; width:16px; height:1px; background:var(--primary-400); }
-
-  h2.section-title{
-    font-size:clamp(28px,4vw,44px);
-    font-weight:700;
-    letter-spacing:-0.01em;
-    line-height:1.15;
-    max-width:640px;
-  }
-  p.section-desc{
-    color:var(--text-3);
-    font-size:16px;
-    max-width:480px;
-    margin-top:16px;
-  }
-  .section-head{
-    display:flex;
-    flex-direction:column;
-    gap:0;
-    margin-bottom:56px;
-  }
-  @media(min-width:900px){
-    .section-head{
-      flex-direction:row;
-      justify-content:space-between;
-      align-items:flex-end;
-    }
-    .section-head p.section-desc{ margin-top:0; text-align:right; }
-  }
+  .eyebrow{ font-family:var(--wide); font-stretch:125%; font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:.06em; color:var(--y); margin-bottom:18px; display:flex; align-items:center; gap:10px; }
+  .eyebrow::before{ content:""; width:22px; height:2px; background:var(--y); }
+  h2.section-title{ font-family:var(--wide); font-stretch:125%; font-weight:800; text-transform:uppercase; font-size:clamp(26px,3.8vw,46px); line-height:1.05; max-width:760px; }
+  h2.section-title em{ font-style:normal; color:var(--y); }
+  .section-head{ margin-bottom:56px; display:flex; flex-direction:column; gap:16px; }
+  @media(min-width:900px){ .section-head{ flex-direction:row; justify-content:space-between; align-items:flex-end; } }
+  .section-desc{ color:var(--text-3); max-width:420px; }
 
   .btn{
-    font-family:inherit;
-    font-size:15px;
-    font-weight:600;
-    padding:15px 28px;
-    border-radius:var(--radius-btn);
-    border:none;
-    cursor:pointer;
-    display:inline-flex;
-    align-items:center;
-    gap:8px;
-    transition:transform var(--t-normal) var(--ease), box-shadow var(--t-normal) var(--ease);
-    text-decoration:none;
+    font-family:var(--wide); font-stretch:125%; text-transform:uppercase; font-weight:700; font-size:13px; letter-spacing:.03em;
+    padding:16px 26px; border-radius:999px; display:inline-flex; align-items:center; gap:10px;
+    text-decoration:none; border:1.5px solid transparent; cursor:pointer;
+    transition:transform .25s var(--ease), background .25s var(--ease), color .25s var(--ease);
   }
-  .btn-primary{
-    background:linear-gradient(135deg, var(--primary-500), var(--primary-600));
-    color:#fff;
-    box-shadow:0 8px 24px rgba(47,76,221,.32);
-  }
-  .btn-primary:hover{ transform:scale(1.03); box-shadow:var(--shadow-hover); }
-  .btn-ghost{
-    background:rgba(255,255,255,.03);
-    backdrop-filter:blur(18px);
-    color:var(--text);
-    border:1px solid var(--border);
-  }
-  .btn-ghost:hover{ border-color:var(--border-hover); transform:scale(1.02); }
+  .btn .arr{ transition:transform .25s var(--ease); }
+  .btn:hover .arr{ transform:translate(3px,-3px); }
+  .btn-y{ background:#EFE13E; color:var(--ink); }
+  .btn-y:hover{ transform:scale(1.03); }
+  .founder-photo{ overflow:hidden; }
+  .btn-line{ background:#EFE13E; border-color:#EFE13E; color:var(--ink); }
+  .btn-line:hover{ transform:scale(1.03); }
+    .btn-ink{ background:#EFE13E; color:var(--ink); border-color:var(--ink); }
 
   /* ---------- NAV ---------- */
-  nav{
-    position:fixed;
-    top:0; left:0; right:0;
-    z-index:100;
-    backdrop-filter:blur(18px);
-    background:rgba(9,9,9,.7);
-    border-bottom:1px solid var(--border);
-  }
+  nav{ position:fixed; inset:0 0 auto 0; z-index:100; background:rgba(10,10,10,.75); backdrop-filter:blur(16px); border-bottom:1px solid var(--border); }
   nav .wrap{ display:flex; align-items:center; justify-content:space-between; height:72px; }
-  .brand{ font-weight:800; font-size:19px; letter-spacing:-0.02em; display:flex; align-items:center; gap:9px; }
-  .brand .dot{
-    width:10px; height:10px; border-radius:50%;
-    background:linear-gradient(135deg, var(--primary-500), var(--secondary-400));
-    box-shadow:0 0 16px rgba(47,76,221,.6);
-  }
-  .nav-links{ display:none; gap:32px; font-size:14px; color:var(--text-2); }
-  @media(min-width:860px){ .nav-links{ display:flex; } }
-  .nav-links a{ text-decoration:none; transition:color var(--t-fast) var(--ease); }
-  .nav-links a:hover{ color:var(--text); }
-  .nav-cta{ display:none; }
-  @media(min-width:860px){ .nav-cta{ display:inline-flex; } }
-  .nav-cta .btn{ padding:11px 22px; font-size:14px; }
+  .brand{ display:flex; align-items:center; gap:12px; text-decoration:none; }
+  .brand svg{ height:24px; width:auto; }
+  .brand span{ font-family:var(--wide); font-stretch:125%; font-weight:800; font-size:15px; letter-spacing:.02em; }
+  .nav-links{ display:none; gap:32px; font-family:var(--wide); font-stretch:110%; font-size:12px; font-weight:600; text-transform:uppercase; letter-spacing:.05em; color:var(--text-2); }
+  .nav-links a{ text-decoration:none; transition:color .18s; }
+  .nav-links a:hover{ color:var(--y); }
+  @media(min-width:900px){ .nav-links{ display:flex; } }
+  .nav-cta .btn{ padding:11px 20px; font-size:11px; }
 
-  /* ---------- HERO ---------- */
-  header.hero{
-    padding:150px 0 90px;
-    min-height:92vh;
-    display:flex;
-    align-items:center;
-    position:relative;
+  /* ---------- HERO (split, como a referência) ---------- */
+  .hero{ padding:96px 0 40px; }
+  .hero-frame{
+    display:grid; grid-template-columns:1fr; border-radius:0; overflow:hidden;
+    border:1px solid var(--border); background:var(--surface); min-height:640px;
+  }
+  @media(min-width:980px){ .hero-frame{ grid-template-columns:1.15fr .85fr; } }
+  .hero-left{
+    position:relative; padding:48px 28px; display:flex; flex-direction:column; justify-content:flex-end; gap:28px;
+    background:
+      radial-gradient(circle at 70% 30%, rgba(239,225,62,.20), transparent 55%),
+      linear-gradient(160deg,#151505,#0A0A0A 70%);
     overflow:hidden;
   }
-  .hero-glow{
-    position:absolute;
-    top:-30%;
-    right:-15%;
-    width:900px;
-    height:900px;
-    background:radial-gradient(circle, rgba(47,76,221,.22) 0%, rgba(9,9,9,0) 65%);
-    pointer-events:none;
-    z-index:0;
+  @media(min-width:900px){ .hero-left{ padding:56px; } }
+  .hero-iso{ position:absolute; right:-8%; top:8%; width:78%; opacity:.10; pointer-events:none; }
+  .hero-top{ position:absolute; top:28px; left:28px; right:28px; display:flex; gap:8px; flex-wrap:wrap; }
+  @media(min-width:900px){ .hero-top{ top:40px; left:56px; } }
+  h1.mega{
+    font-family:var(--wide); font-stretch:62%; font-weight:900; text-transform:uppercase;
+    font-size:clamp(48px,7.6vw,108px); line-height:.88; margin-top:56px; overflow-wrap:anywhere; letter-spacing:-.01em; color:var(--y);
   }
-  .hero-grid{
-    display:grid;
-    grid-template-columns:1fr;
-    gap:56px;
-    align-items:center;
-  }
-  @media(min-width:980px){ .hero-grid{ grid-template-columns:1.15fr .85fr; gap:40px; } }
+  .hero-lead{ font-size:clamp(17px,2vw,21px); color:var(--text); max-width:420px; line-height:1.4; }
+  .hero-lead span{ color:var(--text-3); }
+  .hero-actions{ display:flex; flex-wrap:wrap; gap:12px; }
+  .trust{ display:flex; align-items:center; gap:14px; flex-wrap:wrap; }
+  .avatars{ display:flex; }
+  .avatars i{ width:40px; height:40px; border-radius:0; border:2px solid var(--bg); margin-left:-10px; background:linear-gradient(135deg,#3a3a3a,#1c1c1c); display:grid; place-items:center; font-style:normal; font-size:12px; font-weight:700; color:var(--y); }
+  .avatars i:first-child{ margin-left:0; }
+  .avatars i.more{ background:var(--y); color:var(--ink); }
+  .trust p{ font-size:13px; color:var(--text-3); max-width:200px; line-height:1.4; }
 
-  h1.display{
-    font-size:clamp(38px, 6.6vw, 74px);
-    font-weight:800;
-    line-height:1.06;
-    letter-spacing:-0.02em;
-    max-width:640px;
+  .hero-right{
+    background:var(--y); color:var(--ink); padding:28px; display:flex; flex-direction:column; justify-content:space-between; gap:40px; position:relative;
   }
-  h1.display .accent{
-    background:linear-gradient(135deg, var(--primary-300), var(--secondary-400));
-    -webkit-background-clip:text;
-    background-clip:text;
-    color:transparent;
-  }
-  .hero-lead{
-    margin-top:24px;
-    font-size:clamp(16px,2vw,19px);
-    color:var(--text-2);
-    max-width:480px;
-  }
-  .hero-actions{
-    margin-top:36px;
-    display:flex;
-    flex-wrap:wrap;
-    gap:16px;
-  }
-  .hero-stats{
-    margin-top:56px;
-    display:flex;
-    gap:16px;
-    flex-wrap:wrap;
-  }
-  .stat-chip{
-    background:rgba(255,255,255,.03);
-    backdrop-filter:blur(18px);
-    border:1px solid var(--border);
-    border-radius:var(--radius-sm);
-    padding:16px 20px;
-  }
-  .stat-chip .num{ font-size:26px; font-weight:800; letter-spacing:-0.01em; }
-  .stat-chip .label{ font-size:12px; color:var(--text-3); margin-top:2px; }
+  @media(min-width:900px){ .hero-right{ padding:48px; } }
+  .avail{ font-family:var(--wide); font-stretch:125%; font-size:11px; font-weight:800; text-transform:uppercase; letter-spacing:.06em; display:flex; align-items:center; gap:8px; }
+  .avail::after{ content:""; width:8px; height:8px; border-radius:0; background:var(--ink); animation:pulse 1.6s infinite; }
+  @keyframes pulse{ 50%{ opacity:.25; } }
+  .hero-right h2{ font-family:var(--wide); font-stretch:125%; font-weight:800; text-transform:uppercase; font-size:clamp(28px,3vw,40px); line-height:1; margin-top:14px; }
+  .hero-visual{ flex:1; display:grid; place-items:center; min-height:200px; }
+  .hero-visual svg{ width:72%; }
+  .hero-visual svg path{ fill:var(--ink); }
+  .quote-mini{ background:var(--ink); color:var(--text); border-radius:0; padding:22px; }
+  .quote-mini .q{ color:var(--y); font-family:var(--wide); font-weight:900; font-size:28px; line-height:1; }
+  .quote-mini p{ font-size:14px; margin:8px 0 14px; color:var(--text-2); }
+  .quote-mini .who{ font-family:var(--wide); font-stretch:125%; font-weight:800; font-size:12px; text-transform:uppercase; }
+  .quote-mini .who small{ display:block; font-family:'Inter'; font-weight:400; text-transform:none; color:var(--text-3); font-size:12px; }
 
-  /* abstract hero visual */
-  .hero-visual{
-    position:relative;
-    height:420px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-  }
-  .orb-ring{
-    position:absolute;
-    width:320px; height:320px;
-    border-radius:50%;
-    border:1px solid rgba(255,255,255,.10);
-  }
-  .orb-ring.r2{ width:400px; height:400px; border-color:rgba(47,76,221,.16); }
-  .orb-ring.r3{ width:480px; height:480px; border-color:rgba(255,255,255,.05); }
-  .orb-core{
-    width:180px; height:180px;
-    border-radius:50%;
-    background:conic-gradient(from 180deg, var(--primary-500), var(--secondary-500), var(--primary-300), var(--primary-500));
-    filter:blur(2px);
-    box-shadow:0 0 120px rgba(47,76,221,.35);
-  }
-  .orb-mark{
-    position:absolute;
-    width:64px; height:64px;
-    border-radius:16px;
-    background:var(--bg);
-    border:1px solid var(--border);
-    display:flex; align-items:center; justify-content:center;
-    font-weight:800;
-    font-size:20px;
-  }
+  /* ---------- FAIXA (hazard tape dos flyers) ---------- */
+  .tape{ background:var(--y); color:var(--ink); overflow:hidden; padding:14px 0; transform:rotate(-1.5deg); margin:40px -20px; }
+  .tape-track{ display:flex; gap:40px; width:max-content; animation:marquee 26s linear infinite; }
+  .tape-track span{ font-family:var(--wide); font-stretch:125%; font-weight:900; font-size:22px; text-transform:uppercase; white-space:nowrap; display:flex; align-items:center; gap:40px; }
+  .tape-track span::after{ content:"///"; letter-spacing:-.1em; }
+  @keyframes marquee{ to{ transform:translateX(-50%); } }
 
-  /* ---------- LOGOS / SETORES ---------- */
-  .sectors{
-    border-top:1px solid var(--border);
-    border-bottom:1px solid var(--border);
-    padding:40px 0;
-  }
-  .sectors .label{
-    font-size:12px;
-    color:var(--text-3);
-    text-align:center;
-    margin-bottom:24px;
-  }
-  .sectors-row{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:14px;
-  }
-  .sector-chip{
-    font-size:14px;
-    color:var(--text-2);
-    padding:8px 18px;
-    border:1px solid var(--border);
-    border-radius:999px;
-  }
+  /* ---------- NÚMEROS ---------- */
+  .stats{ display:grid; grid-template-columns:repeat(2,1fr); gap:1px; background:var(--border); border:1px solid var(--border); border-radius:0; overflow:hidden; }
+  @media(min-width:900px){ .stats{ grid-template-columns:repeat(4,1fr); } }
+  .stat{ background:var(--bg); padding:32px 24px; }
+  .stat .num{ font-family:var(--wide); font-stretch:125%; font-weight:900; font-size:clamp(34px,4vw,52px); color:var(--y); line-height:1; }
+  .stat .label{ font-size:13px; color:var(--text-3); margin-top:10px; }
 
-  /* ---------- SERVICES ---------- */
-  .card-grid{
-    display:grid;
-    grid-template-columns:1fr;
-    gap:20px;
-  }
+  /* ---------- SERVIÇOS ---------- */
+  .card-grid{ display:grid; grid-template-columns:1fr; gap:16px; }
   @media(min-width:640px){ .card-grid{ grid-template-columns:1fr 1fr; } }
   @media(min-width:980px){ .card-grid{ grid-template-columns:repeat(3,1fr); } }
+  .card{ background:var(--surface); border:1px solid var(--border); border-radius:0; padding:28px; position:relative; overflow:hidden; transition:border-color .25s, transform .25s var(--ease); }
+  .card:hover{ border-color:var(--border-y); transform:translateY(-4px); }
+  .card .n{ font-family:var(--wide); font-stretch:125%; font-weight:800; font-size:12px; color:var(--y); }
+  .card h3{ font-family:var(--wide); font-stretch:125%; font-weight:800; text-transform:uppercase; font-size:18px; margin:26px 0 10px; }
+  .card p{ font-size:14px; color:var(--text-3); }
+  .card::after{ content:"↗"; position:absolute; top:22px; right:24px; color:var(--text-3); transition:color .25s, transform .25s; }
+  .card:hover::after{ color:var(--y); transform:translate(3px,-3px); }
 
-  .card{
-    background:var(--surface);
-    border:1px solid var(--border);
-    border-radius:var(--radius-md);
-    padding:28px;
-    transition:transform var(--t-normal) var(--ease), box-shadow var(--t-normal) var(--ease), border-color var(--t-normal) var(--ease);
-  }
-  .card:hover{ transform:translateY(-6px); box-shadow:var(--shadow-glow); border-color:var(--border-hover); }
-  .card .icon{
-    width:44px; height:44px;
-    border-radius:12px;
-    background:linear-gradient(135deg, var(--primary-500), var(--secondary-400));
-    margin-bottom:22px;
-  }
-  .card h3{ font-size:18px; font-weight:600; margin-bottom:10px; }
-  .card p{ font-size:14px; color:var(--text-3); line-height:1.65; }
+  /* ---------- PROCESSO (4 passos) ---------- */
+  .steps{ display:grid; grid-template-columns:1fr; gap:16px; }
+  @media(min-width:700px){ .steps{ grid-template-columns:1fr 1fr; } }
+  @media(min-width:1080px){ .steps{ grid-template-columns:repeat(4,1fr); } }
+  .step{ border:1px solid var(--border); border-radius:0; padding:28px; background:linear-gradient(180deg,var(--surface),var(--bg)); }
+  .step .big{ font-family:var(--wide); font-stretch:62%; font-weight:900; font-size:88px; line-height:.85; color:var(--y); }
+  .step h3{ font-family:var(--wide); font-stretch:125%; font-weight:800; text-transform:uppercase; font-size:16px; margin:20px 0 8px; }
+  .step p{ font-size:14px; color:var(--text-3); }
+  .center-cta{ display:flex; justify-content:center; margin-top:48px; }
 
-  /* ---------- PROCESS ---------- */
-  .process-list{ display:flex; flex-direction:column; }
-  .process-item{
-    display:grid;
-    grid-template-columns:1fr;
-    gap:24px;
-    padding:36px 0;
-    border-top:1px solid var(--border);
-  }
-  .process-item:last-child{ border-bottom:1px solid var(--border); }
-  @media(min-width:860px){
-    .process-item{ grid-template-columns:80px 1fr; align-items:center; }
-  }
-  .process-num{ font-size:14px; color:var(--primary-300); font-weight:700; font-family:monospace; }
-  .process-item h3{ font-size:22px; font-weight:700; margin-bottom:10px; }
-  .process-item p{ color:var(--text-3); font-size:15px; max-width:420px; }
-  .process-tags{ display:flex; flex-wrap:wrap; gap:8px; margin-top:16px; }
-  .tag{
-    font-size:12px; color:var(--text-3);
-    border:1px solid var(--border);
-    padding:6px 12px; border-radius:999px;
-  }
-
-  /* ---------- PROOF ---------- */
-  .proof-grid{
-    display:grid;
-    grid-template-columns:1fr;
-    gap:24px;
-  }
-  @media(min-width:900px){ .proof-grid{ grid-template-columns:1.1fr .9fr; align-items:stretch; } }
-  .quote-card{
-    background:rgba(255,255,255,.03);
-    backdrop-filter:blur(18px);
-    border:1px solid var(--border);
-    border-radius:var(--radius-lg);
-    padding:40px;
-    box-shadow:var(--shadow-card);
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-  }
-  .quote-card p.quote{
-    font-size:clamp(20px,2.6vw,28px);
-    font-weight:600;
-    line-height:1.35;
-    letter-spacing:-0.01em;
-  }
-  .quote-author{ display:flex; align-items:center; gap:12px; margin-top:32px; }
-  .avatar{
-    width:44px; height:44px; border-radius:50%;
-    background:linear-gradient(135deg, var(--primary-400), var(--secondary-500));
-  }
-  .quote-author .name{ font-size:14px; font-weight:600; }
-  .quote-author .role{ font-size:13px; color:var(--text-3); }
-
-  .proof-stats{ display:grid; grid-template-columns:1fr 1fr; gap:16px; }
-  .proof-stat{
-    background:var(--surface);
-    border:1px solid var(--border);
-    border-radius:var(--radius-md);
-    padding:24px;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-  }
-  .proof-stat .num{ font-size:32px; font-weight:800; }
-  .proof-stat .label{ font-size:13px; color:var(--text-3); margin-top:4px; }
-
-  /* ---------- PRICING ---------- */
-  .pricing-bg{
-    position:relative;
-    border-radius:var(--radius-xl);
-    padding:48px 24px;
-    overflow:hidden;
-    border:1px solid var(--border);
-  }
-  @media(min-width:860px){ .pricing-bg{ padding:64px; } }
-  .pricing-bg::before{
-    content:"";
-    position:absolute; inset:0;
-    background:
-      radial-gradient(circle at 15% 20%, rgba(27,35,56,.55), transparent 55%),
-      radial-gradient(circle at 85% 80%, rgba(47,76,221,.28), transparent 55%),
-      var(--surface);
-    z-index:0;
-  }
-  .pricing-bg > *{ position:relative; z-index:1; }
-  .pricing-head{ text-align:center; margin-bottom:48px; }
-  .pricing-head .eyebrow{ justify-content:center; }
-  .pricing-grid{
-    display:grid;
-    grid-template-columns:1fr;
-    gap:24px;
-    max-width:760px;
-    margin:0 auto;
-  }
-  @media(min-width:700px){ .pricing-grid{ grid-template-columns:1fr 1fr; } }
-  .price-card{
-    background:rgba(9,9,9,.55);
-    backdrop-filter:blur(18px);
-    border:1px solid var(--border);
-    border-radius:var(--radius-md);
-    padding:32px;
-    transition:transform var(--t-normal) var(--ease), border-color var(--t-normal) var(--ease);
-  }
-  .price-card.featured{ border-color:rgba(47,76,221,.45); }
-  .price-card:hover{ transform:translateY(-6px); }
-  .price-card h3{ font-size:18px; font-weight:700; margin-bottom:6px; }
-  .price-card .desc{ font-size:13px; color:var(--text-3); margin-bottom:20px; }
-  .price-card .price{ font-size:36px; font-weight:800; letter-spacing:-0.01em; }
-  .price-card .price span{ font-size:14px; color:var(--text-3); font-weight:500; }
-  .price-card .note{ font-size:12px; color:var(--text-3); margin:6px 0 20px; }
-  .price-card ul{ display:flex; flex-direction:column; gap:10px; margin-bottom:28px; }
-  .price-card li{ font-size:14px; color:var(--text-2); display:flex; gap:10px; align-items:flex-start; }
-  .price-card li::before{ content:"✓"; color:var(--primary-300); font-weight:700; flex-shrink:0; }
-  .price-card .btn{ width:100%; justify-content:center; }
+  /* ---------- INVESTIMENTO ---------- */
+  .pricing-grid{ display:grid; grid-template-columns:1fr; gap:20px; max-width:880px; margin:0 auto; }
+  @media(min-width:760px){ .pricing-grid{ grid-template-columns:1fr 1fr; } }
+  .price-card{ border:1px solid var(--border); border-radius:0; padding:32px; background:var(--surface); display:flex; flex-direction:column; }
+  .price-card.featured{ background:var(--y); color:var(--ink); border-color:var(--y); }
+  .price-card .tier{ font-family:var(--wide); font-stretch:125%; font-weight:800; font-size:11px; text-transform:uppercase; letter-spacing:.06em; opacity:.7; }
+  .price-card h3{ font-family:var(--wide); font-stretch:125%; font-weight:900; text-transform:uppercase; font-size:30px; line-height:1; margin:10px 0 12px; }
+  .price-card .desc{ font-size:14px; opacity:.75; margin-bottom:22px; }
+  .price-card .price{ font-family:var(--wide); font-stretch:125%; font-weight:800; font-size:20px; text-transform:uppercase; }
+  .price-card .note{ font-size:12px; opacity:.6; margin:4px 0 22px; }
+  .price-card ul{ display:flex; flex-direction:column; gap:10px; margin-bottom:28px; flex:1; }
+  .price-card li{ font-size:14px; display:flex; gap:10px; }
+  .price-card li::before{ content:"■"; font-size:9px; margin-top:6px; color:var(--y); }
+  .price-card.featured li::before{ color:var(--ink); }
+  .price-card .btn{ justify-content:center; }
 
   /* ---------- FAQ ---------- */
-  .faq-list{ max-width:760px; }
-  .faq-item{
-    border-top:1px solid var(--border);
-    padding:24px 0;
-    cursor:pointer;
-  }
+  .faq-grid{ display:grid; grid-template-columns:1fr; gap:40px; }
+  @media(min-width:900px){ .faq-grid{ grid-template-columns:.8fr 1.2fr; } }
+  .faq-item{ border-top:1px solid var(--border); padding:22px 0; }
   .faq-item:last-child{ border-bottom:1px solid var(--border); }
-  .faq-q{
-    display:flex;
-    width:100%;
-    justify-content:space-between;
-    align-items:center;
-    gap:16px;
-    font-size:17px;
-    font-weight:600;
-    font-family:inherit;
-    color:inherit;
-    text-align:left;
-    background:transparent;
-    border:0;
-    cursor:pointer;
-  }
-  .faq-q .plus{
-    font-size:20px;
-    color:var(--primary-300);
-    transition:transform var(--t-normal) var(--ease);
-    flex-shrink:0;
-  }
-  .faq-item.open .faq-q .plus{ transform:rotate(45deg); }
-  .faq-a{
-    max-height:0;
-    overflow:hidden;
-    transition:max-height var(--t-normal) var(--ease), opacity var(--t-normal) var(--ease);
-    opacity:0;
-    font-size:14px;
-    color:var(--text-3);
-    line-height:1.7;
-  }
-  .faq-item.open .faq-a{ opacity:1; margin-top:14px; }
+  .faq-q{ width:100%; display:flex; justify-content:space-between; gap:16px; align-items:center; background:none; border:0; color:inherit; text-align:left; font-family:var(--wide); font-stretch:115%; font-weight:700; font-size:16px; cursor:pointer; }
+  .faq-q .plus{ width:32px; height:32px; border-radius:0; border:1px solid var(--border-y); display:grid; place-items:center; color:var(--y); flex-shrink:0; transition:transform .25s var(--ease), background .25s; }
+  .faq-item.open .plus{ transform:rotate(45deg); background:var(--y); color:var(--ink); }
+  .faq-a{ max-height:0; overflow:hidden; opacity:0; transition:max-height .3s var(--ease), opacity .3s; font-size:14px; color:var(--text-3); }
+  .faq-item.open .faq-a{ opacity:1; margin-top:12px; }
 
-  /* ---------- FINAL CTA ---------- */
-  .final-cta{
-    text-align:center;
-    padding:120px 0 140px;
-    position:relative;
-    overflow:hidden;
-  }
-  .cta-arc{
-    position:absolute;
-    top:0; left:50%;
-    transform:translateX(-50%);
-    width:1400px;
-    height:700px;
-    border-radius:0;
-    border:1px solid rgba(47,76,221,.28);
-    box-shadow:0 0 140px rgba(47,76,221,.20);
-    pointer-events:none;
-  }
-  .final-cta h2{
-    font-size:clamp(30px,5vw,52px);
-    font-weight:800;
-    letter-spacing:-0.02em;
-    max-width:680px;
-    margin:0 auto 20px;
-    line-height:1.15;
-  }
-  .final-cta p{
-    color:var(--text-2);
-    max-width:460px;
-    margin:0 auto 36px;
-    font-size:17px;
-  }
+  /* ---------- CTA FINAL (flyer "Solicite seu projeto") ---------- */
+  .final{ padding:40px 0 120px; }
+  .final-box{ border-radius:0; overflow:hidden; border:1px solid var(--border); background:var(--surface); }
+  .final-top{ padding:28px; display:flex; justify-content:space-between; gap:8px; flex-wrap:wrap; }
+  @media(min-width:900px){ .final-top{ padding:40px 56px; } }
+  .final-body{ padding:0 28px 28px; }
+  @media(min-width:900px){ .final-body{ padding:0 56px 56px; } }
+  .final h2{ font-family:var(--wide); font-stretch:125%; font-weight:900; text-transform:uppercase; color:var(--y); line-height:.95; font-size:clamp(40px,8.5vw,120px); }
+  .final h2 small{ display:flex; align-items:center; gap:.3em; font-size:.48em; }
+  .final p{ color:var(--text-2); max-width:460px; margin:24px 0 32px; }
+  .final-tape{ background:var(--y); height:72px; display:flex; align-items:center; gap:28px; padding:0 28px; overflow:hidden; }
+  .final-tape svg{ height:44px; width:auto; flex-shrink:0; }
+  .final-tape svg path{ fill:var(--ink); }
+  .final-tape b{ font-family:var(--wide); font-stretch:125%; font-weight:900; font-size:40px; color:var(--ink); letter-spacing:-.1em; flex-shrink:0; }
+
+  /* ---------- SOBRE ---------- */
+  .founder{ display:grid; grid-template-columns:1fr; gap:40px; border:1px solid var(--border); border-radius:0; padding:28px; background:var(--surface); }
+  @media(min-width:900px){ .founder{ grid-template-columns:.7fr 1.3fr; padding:56px; gap:64px; align-items:center; } }
+  .founder-photo{ aspect-ratio:4/5; border-radius:0; background:#fff; display:grid; place-items:center; overflow:hidden; }
+  .founder-photo span{ font-family:var(--wide); font-stretch:62%; font-weight:900; font-size:120px; color:var(--ink); }
+  .founder-photo img{ width:100%; height:100%; object-fit:cover; }
+  .founder-id{ margin-top:16px; }
+  .founder-id .who{ font-family:var(--wide); font-stretch:125%; font-weight:800; text-transform:uppercase; }
+  .founder-id .role{ font-size:13px; color:var(--text-3); }
+  .founder-text{ color:var(--text-2); margin-top:18px; max-width:560px; }
+  .cert{ font-size:13px; padding:12px 14px; border-radius:0; margin-bottom:20px; }
+  .cert.no{ background:rgba(10,10,10,.1); }
+  .cert.yes{ background:var(--y-soft); color:var(--y); }
+  .cert-info{ text-align:center; color:var(--text-3); font-size:13px; max-width:560px; margin:32px auto 0; }
+  .brand span em{ font-style:normal; font-weight:500; color:var(--text-3); }
 
   /* ---------- FOOTER ---------- */
   footer{ border-top:1px solid var(--border); padding:64px 0 40px; }
-  .footer-grid{
-    display:grid;
-    grid-template-columns:1fr;
-    gap:40px;
-  }
+  .footer-grid{ display:grid; grid-template-columns:1fr; gap:40px; }
   @media(min-width:700px){ .footer-grid{ grid-template-columns:1.4fr 1fr 1fr; } }
-  .footer-grid p{ color:var(--text-3); font-size:14px; max-width:280px; margin-top:14px; }
-  .footer-col h4{ font-size:13px; color:var(--text-3); margin-bottom:16px; font-weight:600; }
+  .footer-grid p{ color:var(--text-3); font-size:14px; max-width:300px; margin-top:16px; }
+  .footer-col h4{ font-family:var(--wide); font-stretch:125%; font-size:11px; font-weight:800; text-transform:uppercase; letter-spacing:.06em; color:var(--y); margin-bottom:16px; }
   .footer-col ul{ display:flex; flex-direction:column; gap:10px; }
-  .footer-col a{ font-size:14px; color:var(--text-2); text-decoration:none; transition:color var(--t-fast) var(--ease); }
-  .footer-col a:hover{ color:var(--text); }
-  .footer-bottom{
-    margin-top:56px;
-    padding-top:24px;
-    border-top:1px solid var(--border);
-    font-size:13px;
-    color:var(--text-3);
-    display:flex;
-    justify-content:space-between;
-    flex-wrap:wrap;
-    gap:12px;
-  }
+  .footer-col a{ font-size:14px; color:var(--text-2); text-decoration:none; }
+  .footer-col a:hover{ color:var(--y); }
+  .footer-bottom{ margin-top:56px; padding-top:24px; border-top:1px solid var(--border); font-size:13px; color:var(--text-3); display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; }
 
   @media (prefers-reduced-motion: reduce){
-    .reveal{ opacity:1 !important; transform:none !important; filter:none !important; }
+    .reveal{ opacity:1 !important; transform:none !important; }
+    .tape-track{ animation:none; }
     html{ scroll-behavior:auto; }
   }
+  /* botões: amarelo sólido, texto preto */
+  a.btn, a.btn-y, a.btn-line, a.btn-ink{ background:#EFE13E !important; color:#0A0A0A !important; opacity:1 !important; mix-blend-mode:normal; }
+  .btn-ink{ border-color:#0A0A0A !important; }
+  .btn:hover{ background:#F7EC6A !important; }
+  .hero-actions{ position:relative; z-index:2; opacity:1 !important; }
 </style>
 </head>
 <body>
+
+<!-- Isotipo VICE reutilizável -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <path id="vice-iso" d="M758 94.6852V0H474.251L547.994 92.6805H602.032L546.19 162.843L493.689 229.196C487.277 237.281 474.251 232.737 474.251 222.447V113.529L383.943 0H307.127C301.984 0 297.843 4.14289 297.843 9.28811V89.8741L501.57 344.663L429.765 308.979L383.476 367.047L91.1765 0H9.28463C4.14136 0 0 4.14289 0 9.28811V83.4592L324.495 491H442.457L529.893 381.212L617.261 491H758V469.817L558.346 219.039L630.554 254.721L758 94.6852Z"/>
+  </defs>
+</svg>
 
 <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
 
 <nav aria-label="Navegação principal">
   <div class="wrap">
-    <div class="brand"><span class="dot"></span>Pedro Martins</div>
+    <a class="brand" href="#" aria-label="VICE CO — início">
+      <svg viewBox="0 0 758 491" aria-hidden="true"><use href="#vice-iso" fill="#EFE13E"/></svg>
+      <span>VICE CO <em>/ Pedro Martins</em></span>
+    </a>
     <div class="nav-links">
-      <a href="#servicos">Serviços</a>
-      <a href="#processo">Processo</a>
-      <a href="#investimento">Investimento</a>
-      <a href="#faq">Dúvidas frequentes</a>
+      <a href="#servicos">O que fazemos</a>
+      <a href="#processo">Etapas</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#investimento">Planos</a>
+      <a href="https://www.behance.net/Pedrodesignn" target="_blank" rel="noopener">Portfólio</a>
     </div>
-    <div class="nav-cta"><a href="https://wa.me/5532984255466" target="_blank" rel="noopener" class="btn btn-primary">Vamos conversar</a></div>
+    <div class="nav-cta"><a href="https://wa.me/5532984255466" target="_blank" rel="noopener" class="btn btn-y">Solicitar projeto <span class="arr">↗</span></a></div>
   </div>
 </nav>
 
 <main id="conteudo">
+
+<!-- HERO -->
 <header class="hero">
-  <div class="hero-glow"></div>
-  <div class="wrap hero-grid">
-    <div class="hero-copy">
-      <div class="eyebrow reveal" data-reveal="hero">Design estratégico &amp; sites</div>
-      <h1 class="display reveal" data-reveal="hero">Design que vai além da estética.<br>Gera <span class="accent">resultado.</span></h1>
-      <p class="hero-lead reveal" data-reveal="hero">Crio identidades visuais, sites e motion design para marcas que querem comunicar valor, conquistar confiança e se tornar referência no seu mercado.</p>
-      <div class="hero-actions reveal" data-reveal="hero">
-        <a href="https://wa.me/5532984255466" target="_blank" rel="noopener" class="btn btn-primary">Tirar meu projeto do papel</a>
-        <a href="#processo" class="btn btn-ghost">Conhecer o processo</a>
+  <div class="wrap">
+    <div class="hero-frame reveal" data-reveal="hero">
+      <div class="hero-left">
+        <svg class="hero-iso" viewBox="0 0 758 491" aria-hidden="true"><use href="#vice-iso" fill="#EFE13E"/></svg>
+        <div class="hero-top"><span class="tag-y">2026</span><span class="tag-y">Identidade visual</span></div>
+        <h1 class="mega">Agência de<br>branding<br>&amp; design</h1>
+        <p class="hero-lead">Identidade visual para qualquer tipo de negócio. <span>Símbolo, tipografia e cor definidos a partir de onde a marca vai ser aplicada: fachada, embalagem, redes ou tela.</span></p>
+        <div class="hero-actions">
+          <a href="https://wa.me/5532984255466" target="_blank" rel="noopener" class="btn btn-y">Solicitar projeto <span class="arr">↗</span></a>
+          <a href="https://www.behance.net/Pedrodesignn" target="_blank" rel="noopener" class="btn btn-line">Ver portfólio no Behance <span class="arr">↗</span></a>
+        </div>
+        <div class="trust">
+          <div class="avatars" aria-hidden="true"><i>A</i><i>F</i><i>I</i><i>T</i><i class="more">+196</i></div>
+          <p>Mais de 200 projetos entregues.</p>
+        </div>
       </div>
-      <div class="hero-stats reveal" data-reveal="hero">
-        <div class="stat-chip"><div class="num">80+</div><div class="label">Projetos entregues</div></div>
-        <div class="stat-chip"><div class="num">6</div><div class="label">Segmentos atendidos</div></div>
-        <div class="stat-chip"><div class="num">100%</div><div class="label">Projetos com acompanhamento próximo</div></div>
+      <div class="hero-right">
+        <div>
+          <div class="avail">Agenda aberta para</div>
+          <h2>Novos<br>projetos</h2>
+        </div>
+        <!-- Troque este bloco por uma foto/render 3D quando tiver -->
+        <div class="hero-visual"><svg viewBox="0 0 758 491" aria-hidden="true"><use href="#vice-iso"/></svg></div>
+        <div class="quote-mini">
+          <div class="q">“</div>
+          <p>Cada etapa teve um motivo claro. A marca chegou pronta para usar.</p>
+          <div class="who">Cliente VICE<small>Identidade visual</small></div>
+        </div>
       </div>
-    </div>
-    <div class="hero-visual reveal" data-reveal="hero-visual">
-      <div class="orb-ring r3"></div>
-      <div class="orb-ring r2"></div>
-      <div class="orb-ring"></div>
-      <div class="orb-core"></div>
-      <div class="orb-mark">P</div>
     </div>
   </div>
 </header>
 
-<div class="sectors">
-  <div class="wrap">
-    <div class="label">Experiência com marcas de diferentes segmentos</div>
-    <div class="sectors-row">
-      <span class="sector-chip">Alimentação</span>
-      <span class="sector-chip">Fitness &amp; Saúde</span>
-      <span class="sector-chip">Imobiliário</span>
-      <span class="sector-chip">Tecnologia</span>
-      <span class="sector-chip">Moda &amp; Varejo</span>
-      <span class="sector-chip">Serviços</span>
-    </div>
+<!-- FAIXA -->
+<div class="tape" aria-hidden="true">
+  <div class="tape-track">
+    <span>Logotipo</span><span>Símbolo</span><span>Tipografia</span><span>Paleta de cores</span><span>Guia de uso</span><span>Qualquer segmento</span>
+    <span>Logotipo</span><span>Símbolo</span><span>Tipografia</span><span>Paleta de cores</span><span>Guia de uso</span><span>Qualquer segmento</span>
   </div>
 </div>
 
-<section id="servicos">
+<!-- NÚMEROS -->
+<section style="padding-top:64px">
   <div class="wrap">
-    <div class="section-head reveal" data-reveal="head">
-      <div>
-        <div class="eyebrow">O que eu faço</div>
-        <h2 class="section-title">Tudo o que sua marca precisa para se destacar, em um só lugar</h2>
-      </div>
-      <p class="section-desc">Da estratégia ao lançamento, cada ponto de contato é pensado para fortalecer sua marca e apoiar seus objetivos de negócio.</p>
-    </div>
-    <div class="card-grid">
-      <div class="card reveal" data-reveal="card"><div class="icon"></div><h3>Identidade visual</h3><p>Nome, logotipo e sistema de marca que traduzem a essência do seu negócio e dão consistência a toda a comunicação.</p></div>
-      <div class="card reveal" data-reveal="card"><div class="icon"></div><h3>Design de interfaces</h3><p>Sites e experiências digitais intuitivas, desenhados para levar o visitante com clareza até a ação desejada.</p></div>
-      <div class="card reveal" data-reveal="card"><div class="icon"></div><h3>Motion design</h3><p>Vídeos e animações que tornam sua comunicação mais dinâmica, memorável e relevante em campanhas e redes sociais.</p></div>
-      <div class="card reveal" data-reveal="card"><div class="icon"></div><h3>Social media</h3><p>Direção de arte para uma presença digital consistente, reconhecível e alinhada à sua estratégia de marca.</p></div>
-      <div class="card reveal" data-reveal="card"><div class="icon"></div><h3>Materiais impressos</h3><p>Embalagens, cardápios e materiais físicos que levam a força da sua marca para cada experiência presencial.</p></div>
-      <div class="card reveal" data-reveal="card"><div class="icon"></div><h3>Consultoria de marca</h3><p>Direcionamento estratégico para organizar sua comunicação, ganhar clareza e crescer com mais consistência.</p></div>
+    <div class="stats reveal" data-reveal="head">
+      <div class="stat"><div class="num">+200</div><div class="label">Projetos entregues</div></div>
+      <div class="stat"><div class="num">04</div><div class="label">Etapas por projeto</div></div>
+      <div class="stat"><div class="num">50/50</div><div class="label">Pagamento: entrada e entrega</div></div>
+      <div class="stat"><div class="num">SVG</div><div class="label">Arquivos vetoriais na entrega</div></div>
     </div>
   </div>
 </section>
 
+<!-- SERVIÇOS -->
+<section id="servicos" style="padding-top:40px">
+  <div class="wrap">
+    <div class="section-head reveal" data-reveal="head">
+      <div>
+        <div class="eyebrow">O que a VICE faz</div>
+        <h2 class="section-title reveal-up">Identidade feita para <em>ser aplicada</em></h2>
+      </div>
+      <p class="section-desc">Loja, restaurante, prestador de serviço, marca pessoal ou projeto digital. Cada item abaixo é pensado para ser aplicado, não só apresentado.</p>
+    </div>
+    <div class="card-grid">
+      <div class="card reveal" data-reveal="card"><div class="n">01</div><h3>Logotipo</h3><p>Logo principal, sublogo ou monograma, com versões horizontal e vertical.</p></div>
+      <div class="card reveal" data-reveal="card"><div class="n">02</div><h3>Símbolo</h3><p>Uma marca curta, que funciona em tamanho pequeno: ícone, perfil, favicon e assinatura.</p></div>
+      <div class="card reveal" data-reveal="card"><div class="n">03</div><h3>Tipografia</h3><p>Fonte primária e secundária definidas para uso no digital e no impresso.</p></div>
+      <div class="card reveal" data-reveal="card"><div class="n">04</div><h3>Paleta de cores</h3><p>Cores da marca e variações para fundo claro e escuro.</p></div>
+      <div class="card reveal" data-reveal="card"><div class="n">05</div><h3>Guia de uso</h3><p>Como e onde usar cada arquivo, para a marca não se perder com o tempo.</p></div>
+      <div class="card reveal" data-reveal="card"><div class="n">06</div><h3>Anterioridade</h3><p>Certificado que comprova autoria e data de criação da marca, antes do registro oficial.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESSO -->
 <section id="processo">
   <div class="wrap">
     <div class="section-head reveal" data-reveal="head">
       <div>
-        <div class="eyebrow">Como trabalhamos</div>
-        <h2 class="section-title">Um processo claro, do briefing ao lançamento</h2>
+        <div class="eyebrow">Etapas</div>
+        <h2 class="section-title reveal-up">Do briefing à <em>marca aplicada</em></h2>
       </div>
-      <p class="section-desc">Você acompanha cada etapa, entende as decisões e sabe exatamente o que esperar em cada momento.</p>
+      <p class="section-desc">Quatro etapas. Em cada uma você sabe o que está sendo feito e por quê.</p>
     </div>
-    <div class="process-list">
-      <div class="process-item reveal" data-reveal="process">
-        <div class="process-num">01</div>
-        <div>
-          <h3>Descoberta</h3>
-          <p>Antes de criar, mergulho no seu negócio, no seu público e nos objetivos que o projeto precisa alcançar.</p>
-          <div class="process-tags"><span class="tag">Briefing</span><span class="tag">Pesquisa</span><span class="tag">Referências</span></div>
-        </div>
-      </div>
-      <div class="process-item reveal" data-reveal="process">
-        <div class="process-num">02</div>
-        <div>
-          <h3>Design &amp; construção</h3>
-          <p>Transformo a estratégia em um sistema visual e em peças que funcionam com coerência em todos os pontos de contato.</p>
-          <div class="process-tags"><span class="tag">Identidade</span><span class="tag">UI/UX</span><span class="tag">Protótipo</span></div>
-        </div>
-      </div>
-      <div class="process-item reveal" data-reveal="process">
-        <div class="process-num">03</div>
-        <div>
-          <h3>Entrega &amp; suporte</h3>
-          <p>Finalizo, ajusto com base em feedbacks e permaneço disponível para apoiar os próximos passos após o lançamento.</p>
-          <div class="process-tags"><span class="tag">QA</span><span class="tag">Ajustes</span><span class="tag">Suporte contínuo</span></div>
-        </div>
-      </div>
+    <div class="steps">
+      <div class="step reveal" data-reveal="card"><div class="big">1</div><h3>Alinhamento</h3><p>Pré-briefing, proposta e entrada de 50%. Reunião para alinhar objetivo, público e prazo.</p></div>
+      <div class="step reveal" data-reveal="card"><div class="big">2</div><h3>Pesquisa</h3><p>Diagnóstico da marca, pesquisa de mercado, de público e análise de concorrentes.</p></div>
+      <div class="step reveal" data-reveal="card"><div class="big">3</div><h3>Desenvolvimento</h3><p>Rascunhos, definição de símbolo e tipografia, aprovação do logotipo.</p></div>
+      <div class="step reveal" data-reveal="card"><div class="big">4</div><h3>Aplicação</h3><p>Mockups da marca em uso, pagamento final de 50% e entrega dos arquivos.</p></div>
     </div>
+    <div class="center-cta reveal" data-reveal="head"><a href="https://wa.me/5532984255466" target="_blank" rel="noopener" class="btn btn-y">Começar pelo alinhamento <span class="arr">↗</span></a></div>
   </div>
 </section>
 
-<section id="prova">
+<!-- QUEM FAZ -->
+<section id="sobre">
   <div class="wrap">
-    <div class="section-head reveal" data-reveal="head">
-      <div>
-        <div class="eyebrow">Resultado</div>
-        <h2 class="section-title">Resultados que clientes percebem na prática</h2>
-      </div>
-    </div>
-    <div class="proof-grid">
-      <div class="quote-card reveal" data-reveal="card">
-        <p class="quote">"O processo foi claro do início ao fim. Cada etapa teve propósito, e o resultado final superou muito as nossas expectativas."</p>
-        <div class="quote-author">
-          <div class="avatar"></div>
-          <div><div class="name">Cliente parceiro</div><div class="role">Fundador, empresa de serviços</div></div>
+    <div class="founder reveal" data-reveal="card">
+      <div class="founder-side">
+        <!-- Troque por uma foto sua: <img src="pedro.jpg" alt="Pedro Martins"> -->
+        <div class="founder-photo"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBAUEBAYFBQUGBgYHCQ4JCQgICRINDQoOFRIWFhUSFBQXGiEcFxgfGRQUHScdHyIjJSUlFhwpLCgkKyEkJST/2wBDAQYGBgkICREJCREkGBQYJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCT/wAARCAMkA4QDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD6o4opaKACkpaQ0ALRRikoAWkxR1pQKAExS0EUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFGOaKKACiiigAooxRigBMUvSikNAC0UCigAooooAKKKKACkpaMUAJRRSjpQAUYoooAMUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRiiigAxRmiigAoxRRQAlFBooAKUUUUABpOaWigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigBMUUtFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUA0AFFFFABRRRQAUE0UUAGaKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKZJNHEpaRgqjkknAFJDcQ3EayQypIjdGRgQfoRQBJRRQTigBCaQMCOOaj8xWlC55A3Y9KfnpggUABbB6E/SmfaYgrMzbQpIORiop9StLZZHnuYoliXe5dgoVR1Jz2964TxDrV54v0OZ7C6bR9KkYeVqByJ5FByJYxkBY+PvMeRzjFAmzvre9trtd1vPHKucZRgefSpiwFfO958SPCWmwyaL4v1CyN8QLqPWbAsoupFGFYmM5jkByNvIOPQ1534x/ak1WfTV0/Qi1y0T7Rqt2oV3GAeIl+XJ5BJyCO1ISZ9im9gA3G4ix67xgVgX3xK8IaZfvYXniHToblBuaMyglRnHOOn0NfAN/43utccz6jeX8l9LxJM1wVhQDldsagdOeM45qlZeJpkAguZTNapJ56wy7mR3/ANoAgnd05PFMNT9IrPxDpF/aQ3dtqdnLbzrujkWZcOPUc1oBgwBBBB9K/PDT/Ed34l1A3d1qWmw3KxiIWl4z+XLGQAEQnITAHXIPvXoWi/tC/EDwbe6dNrhZ9Fn2+RA8Qf8AcbucP1JA4GTnGKAufZtArlvAHxA0r4g6S19ps8EmwgOscgbGRkHHUfQgEEVuTXkzyNDawM0mzcHkG2P0xmgdy9RWXLqF7YiJryyEkbEiSW2bcIhjqVPJH0zWkkiuoZSCCMgjoRQFx1FFFAwooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiig0AFFJmgmgBayPFHifTPCWkzanql1HBDGp2hmAaRuyqD1JOAB71rivlf9qXxjqOqeOtH8B6bPD9neNPtEbMAHkkcbQzfwgAA/jQJlWzsvG3xw1u5vb3WtT0mz3MbOxjjLR26uAFZznZypPByx54FZd7fa78CplEWoxW9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FFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQBXvDlY0wTvkUcfn/Sp+KrX9wtnB57j5EYbz/dUnBP0FUdc8R2GhW7TXlzFBGsTzPLI2EjRRyxPpkgfjQK9jifjz8Qbf4eeB764jujDqWoI1vaKvLb8csOeMDv8ASvgi/wBSa6md4lMCv8zKrk7m7kk9ea7r44fFCT4leMJrpW3WFov2e0xwGAP+sx79a82oBC0UlOZ9+M8YGBigYlFKwAxg54pKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoFFFAAT+lFFFABRRRQAUoOKSigBXUo2CCD1qVZXkTY7EheVHpUJJJySTQDjkUAa9pqt/p0MPkXTi3WUyrGW3Ir4wSUPGcV9OfsdeM7GRNT8NSx2kN0D9pgkHEs6n7yn1C9R6Zr5Vl8p9oiPBUMQRyG7jNaHhTW5/DviGw1KCW4ia3nV828mx8A8gH/Higlo/ToUVz/gXxK3ivw5b6o0ZjMmRggAnHfAJx9M10FA07hRRRQMKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiignAzQByPxQ8ZWfgjwbqOrXSRTskLCO2dwpnPdR+GT+FfB3xB+KevfEK6zqN1I1rEStvFwuyPsGxgMeBzXqH7VGu6hrni42CJDDp1piQF5FMucY3bc5VCBkDv1NeCW9m9/fpawHe0smxWIwOT1OOg70ErXUrHk09o1VCfMBbI+UemK0L6xs7GAQmSWS/juHSXZjyWjGArIepJO78MVUukAw/m73flhg8emT3NBQz7OzIXjy4VQz4H3Occ1DRSgE9KAEp6xs3QZqaO2yAWNPddi4GPqKAK7R7R15pmKkdufrTT6mgBtFFBoAKKKOtABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAD1xsbjJ/lTQenrQDg98GkPtQB9QfsnfFqDTpZfCGtXpihuCGsmkIC+bnBXPqwxj3FfWSurdCD9K/LzRtXvdIvEuLGUxTAja/HynPvXt/hH9pHUPD8yx6npCCa1tjBHNZyNlpAd2ZF3bXUnGcYI5xQTsfatFc54K8UDxNoWn37S2szXdusyy2rExSHA3Bc88E4wa6OgpMKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACg8iiigD4q/ak8M6x4b8Y3mrRafHFpGqqiJdRjJ3BQGVm7FtucegryLwL4kg8K+IY9RuYZpYfKlgfySBIquhUspPAYZr71+MfgS2+InhE6LPEzOZ45I2T7yEHBIPQcE9a+BvF/hDUvBuvXmj6nGsdxasA21tynIyMH3HNBPkVW1uSeYR3GZLL7QJmi2ruOBjrjrt49Kp3dwk0reTGI4tx2L3x2z71Aas2enzXUiYU7DklvYdaCrEcFs8xOAQBznFXIbXC8cH9a1Y7BI0CjO3HQmqszKgOzkk4PFAFdiqKV6VSeT8xT5N2SB6+tN2j7px05oAhzRjHcVL5a9SaQquOMcUARDPbrQacc/SkOPxoAbRQaKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACjPWiigABIBHrWnobQy3AtLiWGCOXkTSg4jYA46fl+NZdOwcZ7GgD2H4SfFm9+EWtOl4P7RsJW2zW6S7vKGQTJGQSucHkDrivuXSNUtNa0621GxlEttcxLNE4/iVhkGvgb4Z+GvDXj+3k0K4OpW+viOVrSWEBoSduVDKBkDIwTnuK+hf2Qtenl8H6t4fvRL9q0m8I2tnKo/RefRg3HvQSnqfQFFGaKCgooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigANMlkEUZc9B1p9Q3Vut3bS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UUDCigDJ4ooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKADjHvUiRl0YgZx71HQKADFXdMu5tOv4LiGUwSxOGVz/DVMEg8d6keQyMXZiW9TzmgR6z4ePgS4vZZryzvrK8O25s7q3H2nyLkHiF4ukqMQCO+CRXc/AHx1H4c+MmpaRc6YdHttebyxaPlfs84+YABuQpO7APQEV5V8OdS1e8s9T8N6TpLavPq0QUWyZDo8Z3JNGR0ZeetJpniXWpvH9t4n1Wea5utPuYGu7qSLLRqhCZYY64GOe9BJ+iVFR288dzBHPC4kjkQOrDowIyDUlBYUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACvOf2gdQay+F+pwJ8pviloZCjMI1Y5Zzt9FBNejVw3xpt57r4e6jHBGZC21XQBvmRjtYcc4wefbNCE9j88tSUfaJG3s+7ncxyW96pVrahZbZZUjAKx8E/Q1kkYOKBhRRQBmgCa0QPIc9gTUTj5jV5bc2sDFwBI46H+EVRcYNACUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAD1ZSApGPcVLshWJ/wB4d/GAV61XzUv3owx6jigDo/B3iTUPCes2t7pl6ts6SLIJCoYLwQSR9CeK6DTZbfWdX1N0kkhOtXQjCBiSU3eYxPTcCQOOuTXBxTEKFX7vU5FfRv7OPheHxb4jttQl02CLTrKyR9gIIa4UlPMx6kjNNENH1P4YiMPh3S42UIUtIlKgYC/IOMVp0ijAApaRaCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAA1y/wATZI08Ba4Zg+w2jjcoPyHHDHHIAOCT2ArpzwKwPGVrc6l4W1iytY7eaWWzljRJxmN2KH5WHoaBPY/P7xIkJTYJ4ItymWYoM8ZwFHrk5P0rjm27jtzt7ZqzqMrSXDB0VGT5Cq9MjirWiaDLqzPM7i2soSPOuWGQvso/ib2oBFOxsLjUZvJtomkbGTgcKPUnsPetRrO20gkF1uLhTyw+6v8Au+v1q3e6pHZWv2HTo/s1r3OcvMfV27/ToKwZrkv/ABHr3pDJLu5MhJJ3GqROaUnJ9KSmAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFAGTRRQAHHarNlGrlyxIVRk8Z/GqxqzZXElo6zwyFJFbt1A/rQA6FfLmKHacHkjkV93fs2LZ3Hw5tLq0fAdmV4fLC+U3cA4yQevU9a+E4vLN2Nzho3OC2McHvivuX9mGzl0nwG+l3Uc0VzBNvdHORtdQyMvJ+Ujn65oJ6nsNFFFBQUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAjdKwdTksdQjKjTXu5V/eBHiKd9pOWGPWt5hkYPSsDxfruleFdHn1rVpCscK7Uwfndj0VR3YmgTPgTVPBU7+OPEFreFbKy068lNzNkFY1Lnaq9Mseg/PpWbrmvQtGlnYRiKzhUrEgOQM9ST3Y927/TFbfxK8c3PjDXr2+uNkKyzPIIY+EBPHPdjgDJNcDJIznk5oBCyTNIck5PrUec0UUDCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKB15ooFAC4G7B4FKH2kFe1Ol27ECqQQDls8N9KjoAsWi+dcqu4LuYDPYZNfoJ8HdF1m08PaTqGo3qTSSWQhnTYAW2n5GyOrAZBJ7V+fNoMyryBjrmv0k+F6sngPRVknguJFtI1aWE5VyF6g0E9TqaKKKCgooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiqmrarZ6Jp0+o6hOsFrAheSRuwH8zQAzWta0/w/p02o6ldR21tECWdz+gHc+1fEnx1+Nt3491R7WzC2+mW7YhQNl8jPzE9ifb6ZqP46fG+5+IWqvaWcs0OlQnEUAOMerH/aP6V447b2JyefWgAZyxOSTTDzR3ooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKAcGiigBeopKUYzyaCe1AE9mnzq5zjOMKcGv0Q+C+sjWPAWmH/Ry8EEcTGA/KSEHbAwfUV8CeGdWXTkv7WSCOeK+g8giSMOEbIIYA9GGOCDX3j8E9NbTfDEcUJlNiUQwmW38pnbbhm5+YjgDLcnH0oJ6notFFFBQUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABXyL+1h8W7m510eDtJugLO0UNdNGfvzHtn/ZHH1zX1brWof2To99qGwv9mgebaO+1ScfpX5meJdWn1vW73ULly8txM8jE9eSTQBms25ieefWkpKWgAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiikoAWiiigAooooAKcmW+UdTTakhiaaRUUZZiFAHU5oA2PDXh7Udc1WOysLeSa5I3iOP7xx6e+a/RvwbpN5o/hvT7XUJvOvIreNJWwB8wUA14H+zt8LbTRbmWbX9Hlg1eykWYJcShiisAUZVU8++e9fS+cDJNBK11FFFRW1wl1Ck0ZBR1DKQc5B71LQUFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQBW1SzXUdMu7JhlbiF4iP8AeUj+tfmV4q0d/D/iC+0uRSrW0zx4PbBIr9Pq+Gf2rPCq6V8R73UrUZhudjyhVI8t2XPP15x9CKBHiVFFFAwooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACikpaACiiigAooooAKKKKACiiigAooooAKfE5SQMMZHrTKkULt6Nuz17YoA93+Bfxc1ay18WWpXxkgumgRpZmyypF/Cz4JChM8fSvZPiJ8dbO90e60rw6Ss95CwtL+V9scwBIYxhcvjAPzEAfWvkfR7KGMRS3+rraWeQ8qwNumZCSDhR3+p6V2Vmmo2WjTa7oOn+VpkFubK5u2AJZT94liQQxyowvbGKZmz7C+D9xJdeDrOVrm8uY3ijML3SKjeXsAwAOwIIyetdxXjv7Lcup3fw2S71TezPMY7Z3PJgUAKAOwHOK9ipFx2CiiigYUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFfLP7YMaaTrehapLbebaajayWV0P9xgykdtw3HBr6mryD9qHwWvi74Y3EkePtumSrd2+Tjd2ZR7lSce4oA+FdQsTaSBkcS28nMUq9GH9CO4qrVqzvvswaGaPzrdzl4icc+o9DT7vTwlut5bOZbVm25PDI391h6/zoApUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABT4l3tjIA9zimVd0mynu5pGhspbtLeJppVjyNiD+InsASKAPRPC/xRsNI2x6j4Q0m+KWkdrHlACAuc5zkEvkEk88cYrV8OeDPEHxD1oarLpJ0fQLm5WWSzt8pBjoSiscYwOT2zxXnOmtp895YxLp0077sThZcecMcAcfLg8mvZ/B/jP4i+PdTg8PaatpYuSsP2m3gCtDDsCswcAj7o4PftTRDPp3wPJp0V1dafojxnTrOGKLyIGVoLOQD/VIR1ODk+ldfWL4O8LaZ4M0C20fSbcw28I53fekf+J2PdieTW1SKWwUUUUDCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigArzT496kLXwUbQeaZrmZdgjxuG35s8+mBXpdeKftFS/aF0fT8HLF5MdjyBgn0+lAHyd4s8KLcebqmnMhcyFZ7cYG5+pZAO3t27Vz+n4tdLuzKDicGLb6Ec5I+uOa7PxxdzSXItkCKkPyoFyAuO9cRrbzK0MEpbckYLZPJJ55xQIy6WiigYUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUc4op2Djd6cUANFbfhu1a5vYoHt724tZ3CSxWjBXlA52gnjPAODWRGcH7ozXo3gDxppHhO8F3qltd6j5sfmCK2Ywm3l3jOOxDKME44HHNCE2bmuyaBo9jpdhoPheTRr11V3vdRYm5lJ9+FVSG+pxX0V8CfAT2kA8WX1qlhLPCLaysIYjEkMAPDuCSXduxPQYriPA3w61T4r+L9O8T+JNBGi+GtLj/AOJfYHBMw3blDgjJHPJIGcACvplVCqAoAA4AHamyUuotFFFIsKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigArwr493e3xFYQE9LY4ULu6k5J9MV7rXzf+0hfzWmuukJVZprdY1O4j5MfMSfbP60AfPeq66kep3d3JAzFGKp5jfKcHjjofpXC3dzJd3Ek8rZZySat6xdme4MaY8qPgbScMfWs8KT0FABRQRg0UAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUY4zmigBV6jjNTxQB54lJBWRgPvY+oyelV+lO3EnNAHY+DvC9n4p1D7HYu6Xih5THNIgTYCNqqTy7nOMYFe0+L9A0vwD4j8GR6fYWl9J/a/nyu1qEc8IPIK7eAMlgCT0r5w0+5+zXSSK5j+ZSWHVec5B7HjrXo/hbVtS8S6/pAu4Jb6P8AtFSLmXckk0jkDmXJ+ZVAIxyaaM5I++khSPdtJG/k1KKZEhSJEJyVUD1p9I0CiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAEZgqliQABkk9q+Df2g/iGnjDx1etYuWtUxDGxyMKvH6nmvrn42eLW8F/DfWNRilEV08X2e3OcESP8oI+mSa/PXU7lpbkOzMzkZLE9aBFaS4YnGBjpz3qIscYzSHrRQMKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAClTAYEjIHUetJT0GOfwoAkSLzJgq/KrnjcenNfTnwU+GyWPxEsLC11L+07bRlW/vGWT9wJ2X5fLAyCVOBnOTzxxXgvhPw9L4m1fS9MtyvnXlylv8AP92MswAJ/Wv0L8F+B9E8B6NFpei2UNtGoBkdV+aV8csx680ydzeFLRiikUFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAfN/wC2hrb2ugeHdIAOy6u3nZgemxQAP/H/ANK+QrgOdrtyCMZ+navpb9ta+S41nQbZHLG0ifzE7AuQR+g6182STq8W3GD39G/wNAiB1Iw2ODTaUknuaSgYUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRT4UEkqIzBAxALHoPegaV3YZRXS+LvDun6HFaGyu2neRfnBIPb7wx2Nc1UwmpK6NcRQnQm6c9woooqjEKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAq1aW0s0UzoF2RrucswHGe2epqrV+zmjjj8t41JY8uw6D2/GgTPq39mH4baNqPgC/1C+tLgXt/NsW6KhTCIyChibsQ3OfUV9AaBq51Bbi1mlhkurKUwSmIk7iAPmPAxn0rhfgdpEtl4O07Y1vHp8UX+jR2t6Z0O7BZnOACc9B2ya9GsI12tOUZJJsFwy4PHA4pslFvNFFFIsKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA+Mv2mbOXxP8a10RbiOGIW8JeZz8sKBCzMfoMnHevIteu9As0Nho9qzwRpt8+4XE07nq7EfdUdlHrzXq37S921n8QfEl2kbB7iO3sUkIxgBAzgevbmvAWZmYliSaBCtgnIGBSNjPy9PekooGFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAKzs2NzE44GTSUUUBcKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAK9E+DXhGDxZ4nS1u0jkgBTIdgNx3jKg+uM154o5HHWvpn9lPRkgmi1qa3EiS3D6fu2qRGSNysec5JBHIpomR9WaRpVlo9hFZWFtBb28agKkKBF+uBV0CkRQowBgAYApaRQUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAfIH7XGnND4kEyqAJ2jkLH/cC/0r5sYbWIPY19bftYaaJtQgO9YzNbAhmPXaT/LivkuddshGP/r0CQyiiigYUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUc0UoGaANjRtLn8Tara2FnaqJWCx4hHXHV2yfxJr7Q+DHgtND8UXM9oxaKx0+LT76VWxHNdKc8J0BCYyRnk14L+zZ4Cl1bx9bX0oWa2tbdrhAmHWRiowjZBx97kHGcHHSvsPwXov9gWN3Zjac3TzFgoXLPhj09CcD2FV0I3Z0IoooqSwooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA8A/azsN+k6TeiPO0yxM3oMA18X3I2zMM5wa+/f2jdJOpfDmeVFBe2mVxn0OR/Wvg7WoTFOh243L19TQIz6KKKBhRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFHWgdeRmlx0x3oAWONpZFRBlmIUD3rt/CHw61PXvEF1pNtbvcT2q/O0DBo0cEYywONpJwT9awtD8MalrmoQ6fp9nJPezKGjhUfNJkgAAfjX2z8HvAVp4RtYNMjikW9EEd1eyrtGJSCu0456ZGM9Vz3qkiZPoi3+zz8P38CeC5FvLZIdTvrqSS5CnsrFUHpwP516mBio4II7dBHEoRQScD3qSpGlZBRRRQMKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAMDx5pS614P1ayZd2+3YgdeQMj+Vfnp4z097bUCoXAKbtueVwea/Sl1DqVYZVhgj1FfCvxt8Kpp/iidIELNG8iNj/eOOtAjxfFFa2o6YdPiCSKVkIDMT2z0FZJ68UDCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiigDNAABQaeylec8EdaZQAUUUUAFFFFABRRRigBQpboM10nhDRIdV1JLe4tbyeNkYlrbBaHAzvx3AANVPDHhq+8T6nDp+nwvLNIeQi7tqjksfYAGvu/4Z/B3R/BWmW3lpJJINsj+cAWdwuFYnAOOp2npn2pol9keZ/Bbw/wCK9Nit7DRtIjsoL5GvJtS1K33NZIWIRYuhYsMHBPFfQXh3w9a+G9Ojs7YySsOZJ5TmSZiclmPckk1phQowBx6UoouNKwUUUUhhRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFfKvx6t7RfG989xKAIQJtn8J4B/MnrX1VXxz+01qbt4t1FFIxGQqj14AOaBM8E1y8kur+Zmctuctn19Kzac5Jc59abQMKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKfEhdgq9aZVm0Tkt0I79hQBHOArbRnAqKnSks5JOfem0AFFFFABQKKKADrWjp2iX2oSXAt4GlFqoeXZztBYKOnXJYCqMUUksiJGrM7EBVUZJPoK9p+A3w/vbvxrCdS068ghsbyP7XMT8kBUFhE646swX6U0hNn0P8AAr4KaR4J8P2+p3cRvNWvYVaR7iLaYFbB8sKehBHJ6mvXwMUKMUtIaCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAr4K+O2oS3XjHVs72QzyAfNzw5/OvvWvgX44WrJ4s1NtzSfv5ctnkjcefpQI8nYlmyaSgggkHrRQMKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKv2+7YxUAADlfUetUVGSK0kidI8KCrYyw9R2NAFGROWbjFRVckhYQNIo+XuQe9U6ACijrSohdgqgszHAA6mgBKVVLEADk0/y3Lbdp3A7cd8+leifCj4H+JPijqbx2ifYdPgyJ76ZTsVv7q/3m9h0oFcyPBnhbXpZotbstKM8ELFUkmiLRmU4VRxyTllx74r7T+Hvwdt/COmaFiaeG9gf7ZqDpKSbuYpja57qCePpXS+DvANl4UsdPgMjXc1lZpZrNIBkgck/UnH5CupFO/YVr7i0UUUigooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAK+Iv2kNGl0b4h6ujxYjugJ4TjjYwycfjn8q+3a8N/am8DvrXheDxFaRbrjTCVmP/TFu/wCB/nQB8QSrtcjP502reox7JsBtwPzD2z2qpQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQBJbnEqnIHPcZFaMYDsoTOQfxP+fSs+3Hz5OfYjtWpaK91cjav3c5B6AUASatZG30qO4I2iWUovOScDJ/DkVhAcV2Hi+3is9B0qFXQSSSSytGMllHygbj0NckiZyfSgBEznAON3Brc8NeD9W8WX72ejwieSMbmcttVRnAJJ9TgD3NeifCn9nPxN8QZ4r24hbSdIxlrm6Q5f2Rf4jyDnge9fXnw8+E3hz4dadHb6fbLcXQVRLeTIvmSkEkHgYHXtQI8S+Gf7Jcyta33jS/TyIf3kdjZ8MxYZzJJ1BHHA9OtfSmi6LYeH9Ng0zTLZLa0t1CRxoOg/r9auhcdKWgLBRRRQMKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAqO5toby3kt7iJJYZVKPG4yrKRggj0qSigD4m/aF+A914Jv21vQ7WSTQZmyWHzG2Y/wALe3oa8HkjeNsOpU+lfqbPBFcQvDPGksTjayOoZWHoQa8I+Iv7JfhzxI8t54buDo1053fZ2G+3J74HVc+3HtQB8T0V614p/Zi+JPh12aPRv7UgGT5lg4k4/wB3hv0rzjUvDGs6NJ5epaZeWTHtcQtHnnH8QFAGZRTzC4GdtIY3AztOPWgBtFGMcUEYNABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAEkAZn+UEkDPFbemeUbhDLINhIAyOPy9qxbdirZAJ7YBrpPDsZlu0aPYFBAYgDcCT2z3oAv/Eqy+z3ulW4gWFzaBvLwVO0sduQenFeyfs8/s6DWBa+K/F1oyWaSb7awkXHn4+67f7Oe3f6V0nw/+FVnrviuzvtY0pZ0it4rjfcIZIyAcbOflyeDnJ6Yr6RRFjQIihVUYAA4AoFuCRpGioihVUYVQMAD0FOoooGFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFRz2sF0nl3EMcyf3ZFDD8jUlFAHO6l8OvB2rD/TvC+jTn1a0TP5gZrktX/Zu+GerA/wDFPC0JGM2k7x/pkj9K9PooA+a/E/7GWl3IL+HPEV1Ztg/u72MSqfTkYIrybxV+yv8AEbQVMtvp0OrxA4BsJQ7fXYcN+Wa+7aKAPy61PQ9R0i5Ntf2c9rODgxTRlGH4EVRPBr9OPEvgvw94vtjba9pFnqMR4/fxgsPo3UfhXy38cf2XrfwxZvr3hGeR7UuqNp8zZdCc/cbuPY8+9AHzXRUlxby20hjljaNhwVYYINR0AFFFFAAaKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAlt13NgZ3dRius8IW0U99bRsSS8oAVVBIyQMgnge1cgjbeec123gWdzrWnSbAD5yAvuI43AYGP880AfoP4ZtWstA0+3eMRtHAilAQcce3FagqO3AWCMAYAUcfhUlABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAV5r8eNRWx8IRKzhd90pwTjcADkZ/GvSjXz9+1NqTRLotnG7h13zlVGTt3AZx+FAHz7430y21q3fUoV2TxovnIqgtLGOjgjuOM+x9jXmMiGJyjdQa9AttVksL23uURPLJJYjo6kcrzx04rD8Z6AulXqeQS8Uw8xX65B5GSOM4/UGgDmaKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAHR4yAeAe/pXZ+BGeXWrGKIupWdSQO2GBzXFrjucV1/g9zHcxuB5mHDEqvz4HNAH6P2x3W8R9UB/SpKqaPKJ9JspVOQ8CMD9VFW6ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooASloooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAA18mftQeJxJ43NhGCxsrZVbaeRn5v8K+s6+E/j5qAvPidrsw5/feSDnoAMfzFAHmz3M3mrmQIsR6HHQ9PrXT6tnVvBVssAErWjtG44B+b5geRn1rjTKjTBThFIKsG74713fg7F54e1i0y80nleYiJyvBGSfpSA8yYFTg0lWtQQpLhiCwJBx0HtVWmAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAoPBrqfB7eVeoZDtjJAZs9Aa5Yd629HUiPaOSzA89Mf5NAH6K/Dy4Nz4I0WRm3EWqLnOc4GOv4V0Vebfs/aoNQ+HNpEWJktJGhYHt3H4c16TQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUU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baXlDLLLtBIyTwM+vSuQl4JByT2Nb93cMdBsoGztWMsAOD1PNc+7BjnGKAG0UUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAO38Y9O9NzmiigAoziiigD3b9mX43f8IDq3/CNa5ORoGoSApIx4s5jxu/3D0PpwfWvtxHV1DKwZWGQQcgivytzivoH4GftPXnguODw94uaa+0RMJDdD5prQemOrp7dR29KAPtKisLw1468M+MLdJ9C1yxv1Zd22KUFwPdeo/EVu5oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKQnFAC0ZrzXx7+0J4C8ACSG71ZNQv0yPsdgRK4PoxB2r+Jr5q+If7WnjDxWslnoA/4RyxbgmBt1w495CPl/4D+dAH1b48+L3g34cwM2vavElxj5bOH95O3/AByPqcV8rfFH9rDxP4v87TvDSt4f0tsqXjbN1Kvu44Uey/ma8Lubme8nee5mknmkO55JGLMx9ST1qOgB0kjzSNJI7O7EszMckk9STTaKKACgmiigAooooA076VTbwDDbliC56YrMqeeYv8pOcAAYqCgAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAnsb+6025S6srma2njOVlhcoyn2Ir27wL+1z428Mxw2utx2/iGzTgtOSlxj/roOv4g14VRQB9yeF/2u/h7rcaLqjXuh3B+8txEXQH2dM/qBXq/h3xh4e8W27XGg6zZalEvDG3lDFfqOor8xKv6Hr+q+GtQj1HR9QubC7jOVmgkKMPy60AfqJRXy78I/wBr2K4MOkfEBVikOETVYUwrf9dVHT/eXj2FfTlneW9/bx3NrNHPBKoeOSNgyup6EEdRQBNRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFF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AFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAVZ03VL3R7yO90+6ntLqI7o5oXKOh9iKrUUAfSPwy/bD1fSTFp3ji2OqWgwov7cBbhPdl6P8AofrX1N4R8beH/HOlrqXh7VLe/tz94xn5oz6Mp5U/WvzIrV8OeKtb8I6kmpaFql1p12nSSB8ZHoR0I9jxQB+n1FfMvwo/a+tNSaDSvHsKWVyxCLqcC4hb3kX+D6jj2FfS1tcwXkEdxbTRzQyqHSSNgyup6EEdRQBJRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFITjqaAFrifiZ8XvC/wt003GtXYe8dSbewiIM059h/CPc8V5Z8b/ANqaz8LNP4f8FPDf6suUnvvvQ2p7hf77/oPevkHWda1HxBqM2patez317O26SeZyzMfr/SgD0L4p/tAeLfibLLay3B0zRmPGn2rEK4/6aN1c/Xj2rzGiigBKWiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACkopaACiiigAooooAKKKKACiiigAooooAK9S+Ef7QPib4Wyx2Yc6poZbL2Ez/AOrHcxt/CfbofSvLaKAP0l+HnxT8MfE3TBe6Dfo8qgefaSHbNAfRl9PccGuuBzX5d6Hr2qeGtSh1PR7+4sL2E5SaB9rD29x7Hivq34Sftd2Op+Ro/j1I7G6OETVIlxC5/wCmi/wH3HH0oA+l6KjtrmG8gjuLeWOaGQBkkjYMrA9wR1qSgAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigANfOn7X/wAQfEPhfStL0TRr02Vvqqy/apIuJWVcDaG7A55xz70UUAfG+c0UUUAFFFFABRRRQAUGiigAooooAKBRRQAUCiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigApKKKAFpKKKAFooooASloooAKKKKACiiigAooooAKKKKACgUUUAe0/s2/E/xP4d8baX4Ztr8zaPqEwjktLjLomf4k5yp+nHqDX3SpyKKKAFooooAKKKKACiiigAooooACaKKKAP/2Q==" alt="Pedro Martins" loading="lazy"></div>
+        <div class="founder-id">
+          <div class="who">Pedro Martins</div>
+          <div class="role">CEO e diretor de criação · VICE CO</div>
         </div>
       </div>
-      <div class="proof-stats reveal" data-reveal="card">
-        <div class="proof-stat"><div class="num">80+</div><div class="label">Projetos entregues</div></div>
-        <div class="proof-stat"><div class="num">6</div><div class="label">Segmentos atendidos</div></div>
-        <div class="proof-stat"><div class="num">3</div><div class="label">Etapas, do briefing ao lançamento</div></div>
-        <div class="proof-stat"><div class="num">100%</div><div class="label">Acompanhamento próximo</div></div>
+      <div>
+        <div class="eyebrow">Quem está por trás</div>
+        <h2 class="section-title reveal-up">O construtor <em>estratégico</em></h2>
+        <p class="founder-text">A VICE CO é a agência que fundei para fazer identidade visual. O segmento muda de cliente para cliente; o método é o mesmo. Marca, aqui, é ferramenta de trabalho do cliente.</p>
+        <p class="founder-text">Eu acompanho cada projeto do alinhamento à entrega. Não trabalho com conceito solto nem com apresentação que não vira arquivo. Tipografia, símbolo e cor são resolvidos já pensando em onde vão ser aplicados.</p>
       </div>
     </div>
   </div>
 </section>
 
+<!-- INVESTIMENTO -->
 <section id="investimento">
   <div class="wrap">
-    <div class="pricing-bg reveal" data-reveal="head">
-      <div class="pricing-head">
-        <div class="eyebrow">Investimento</div>
-        <h2 class="section-title" style="margin:0 auto; text-align:center;">Soluções para o momento que sua marca vive</h2>
+    <div class="section-head reveal" data-reveal="head" style="justify-content:center;text-align:center;align-items:center;flex-direction:column">
+      <div class="eyebrow">Planos</div>
+      <h2 class="section-title reveal-up">Identidade visual: <em>dois escopos</em></h2>
+    </div>
+    <div class="pricing-grid">
+      <div class="price-card featured reveal" data-reveal="card">
+        <div class="tier">Mais escolhido</div>
+        <h3>Basic</h3>
+        <div class="desc">Para quem está começando e precisa de uma identidade profissional para o digital e as redes sociais.</div>
+        <div class="price">Sob orçamento</div>
+        <div class="note">Proposta enviada após o pré-briefing</div>
+        <ul>
+          <li>Logotipo principal</li>
+          <li>Sublogo, monograma ou símbolo + versões horizontal e vertical</li>
+          <li>Variações do logotipo para cores e fundos diferentes</li>
+          <li>Paleta de cores</li>
+          <li>Guia básico de identidade</li>
+          <li>Guia de uso dos arquivos</li>
+          <li>Arquivos prontos para uso (PNG)</li>
+          <li>2 rodadas de revisão</li>
+        </ul>
+        <div class="cert no"><b>Não inclui</b> certificado de anterioridade.</div>
+        <a href="https://wa.me/5532984255466" target="_blank" rel="noopener" class="btn btn-ink">Solicitar o Basic <span class="arr">↗</span></a>
       </div>
-      <div class="pricing-grid">
-        <div class="price-card reveal" data-reveal="card">
-          <h3>Essencial</h3>
-          <div class="desc">Para marcas que estão começando e precisam de uma base visual forte e profissional.</div>
-          <div class="price">Sob orçamento</div>
-          <div class="note">Proposta personalizada após o briefing</div>
-          <ul>
-            <li>Identidade visual completa</li>
-            <li>Guia de uso da marca</li>
-            <li>Peças para redes sociais</li>
-            <li>2 rodadas de ajustes</li>
-          </ul>
-          <a href="https://wa.me/5532984255466" target="_blank" rel="noopener" class="btn btn-ghost">Quero saber mais</a>
-        </div>
-        <div class="price-card featured reveal" data-reveal="card">
-          <h3>Completo</h3>
-          <div class="desc">Identidade visual e site com uma linguagem única, da primeira ideia ao lançamento.</div>
-          <div class="price">Sob orçamento</div>
-          <div class="note">Proposta personalizada após o briefing</div>
-          <ul>
-            <li>Tudo do plano Essencial</li>
-            <li>Site responsivo sob medida</li>
-            <li>Motion para redes sociais</li>
-            <li>Suporte pós-lançamento</li>
-          </ul>
-          <a href="https://wa.me/5532984255466" target="_blank" rel="noopener" class="btn btn-primary">Quero saber mais</a>
-        </div>
+      <div class="price-card reveal" data-reveal="card">
+        <div class="tier">Mais completo</div>
+        <h3>Essencial</h3>
+        <div class="desc">Para quem quer a identidade completa, com arquivos vetoriais e a autoria da marca comprovada.</div>
+        <div class="price">Sob orçamento</div>
+        <div class="note">Proposta enviada após o pré-briefing</div>
+        <ul>
+          <li>Logotipo principal</li>
+          <li>Sublogo, monograma ou símbolo + versões horizontal e vertical</li>
+          <li>Variações do logotipo para cores e fundos diferentes</li>
+          <li>Paleta de cores</li>
+          <li>Tipografia primária e secundária</li>
+          <li>Arquivos vetoriais (SVG, PDF e EPS)</li>
+          <li>4 rodadas de revisão</li>
+        </ul>
+        <div class="cert yes"><b>Inclui</b> certificado de anterioridade.</div>
+        <a href="https://wa.me/5532984255466" target="_blank" rel="noopener" class="btn btn-line">Solicitar o Essencial <span class="arr">↗</span></a>
       </div>
     </div>
+    <p class="cert-info reveal" data-reveal="head">O certificado de anterioridade comprova a autoria e a data de criação da marca e garante proteção legal em todo o Brasil antes do registro oficial.</p>
   </div>
 </section>
 
+<!-- FAQ -->
 <section id="faq">
-  <div class="wrap">
-    <div class="section-head reveal" data-reveal="head">
-      <div>
-        <div class="eyebrow">Perguntas frequentes</div>
-        <h2 class="section-title">Tudo o que você precisa saber antes de começar</h2>
-      </div>
+  <div class="wrap faq-grid">
+    <div class="reveal" data-reveal="head">
+      <div class="eyebrow">Perguntas frequentes</div>
+      <h2 class="section-title reveal-up">Antes de <em>começar</em></h2>
     </div>
-    <div class="faq-list reveal" data-reveal="card">
+    <div class="reveal" data-reveal="card">
       <div class="faq-item">
         <button type="button" class="faq-q" aria-expanded="false" aria-controls="faq-a-1"><span>Quanto tempo leva um projeto?</span><span class="plus" aria-hidden="true">+</span></button>
-        <div class="faq-a" id="faq-a-1">O prazo varia conforme o escopo. Uma identidade visual costuma levar de 2 a 3 semanas; projetos que incluem site geralmente levam de 4 a 6 semanas.</div>
+        <div class="faq-a" id="faq-a-1">Depende do escopo. O prazo exato vai na proposta, enviada depois do pré-briefing.</div>
       </div>
       <div class="faq-item">
-        <button type="button" class="faq-q" aria-expanded="false" aria-controls="faq-a-2"><span>Você atende empresas de qualquer segmento?</span><span class="plus" aria-hidden="true">+</span></button>
-        <div class="faq-a" id="faq-a-2">Sim. Já trabalhei com negócios de alimentação, fitness, imobiliário, tecnologia, moda e serviços — sempre adaptando o direcionamento ao público de cada marca.</div>
+        <button type="button" class="faq-q" aria-expanded="false" aria-controls="faq-a-2"><span>Como funciona o pagamento?</span><span class="plus" aria-hidden="true">+</span></button>
+        <div class="faq-a" id="faq-a-2">50% na aprovação da proposta, antes da reunião de alinhamento. Os outros 50% depois da apresentação dos mockups, antes da entrega dos arquivos.</div>
       </div>
       <div class="faq-item">
-        <button type="button" class="faq-q" aria-expanded="false" aria-controls="faq-a-3"><span>Como funciona o pagamento?</span><span class="plus" aria-hidden="true">+</span></button>
-        <div class="faq-a" id="faq-a-3">Após o briefing, envio uma proposta com escopo, prazo e investimento. O pagamento é dividido em etapas: uma entrada no início do projeto e o restante na entrega.</div>
+        <button type="button" class="faq-q" aria-expanded="false" aria-controls="faq-a-3"><span>Qual a diferença entre o Basic e o Essencial?</span><span class="plus" aria-hidden="true">+</span></button>
+        <div class="faq-a" id="faq-a-3">O Basic entrega arquivos prontos para uso (PNG), guia básico e 2 revisões. O Essencial inclui tipografia, arquivos vetoriais (SVG, PDF e EPS), 4 revisões e o certificado de anterioridade.</div>
       </div>
       <div class="faq-item">
-        <button type="button" class="faq-q" aria-expanded="false" aria-controls="faq-a-4"><span>Depois da entrega, tem suporte?</span><span class="plus" aria-hidden="true">+</span></button>
-        <div class="faq-a" id="faq-a-4">Sim. Todo projeto inclui um período de acompanhamento pós-entrega para dúvidas e ajustes previstos no escopo.</div>
+        <button type="button" class="faq-q" aria-expanded="false" aria-controls="faq-a-4"><span>O que é o certificado de anterioridade?</span><span class="plus" aria-hidden="true">+</span></button>
+        <div class="faq-a" id="faq-a-4">Um documento que comprova a autoria e a data de criação da marca. Garante proteção legal em todo o Brasil antes do registro oficial.</div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="final-cta">
-  <div class="cta-arc"></div>
+<!-- CTA FINAL -->
+<section class="final">
   <div class="wrap">
-    <div class="eyebrow reveal" data-reveal="head" style="justify-content:center;">Vamos conversar</div>
-    <h2 class="reveal" data-reveal="head">Vamos dar à sua marca a presença que ela merece</h2>
-    <p class="reveal" data-reveal="head">Conte um pouco sobre seu negócio. Juntos, vamos encontrar a melhor forma de transformar seus objetivos em uma marca mais forte.</p>
-    <a href="https://wa.me/5532984255466" target="_blank" rel="noopener" class="btn btn-primary reveal" data-reveal="head">Conversar sobre meu projeto</a>
+    <div class="final-box reveal" data-reveal="head">
+      <div class="final-top"><span class="tag-y">VICE CO</span><span class="tag-y">Pedro Martins</span><span class="tag-y">2026</span></div>
+      <div class="final-body">
+        <h2>Solicite<small>seu projeto <span aria-hidden="true">↗</span></small></h2>
+        <p>Mande pelo WhatsApp o nome do seu negócio e o que você precisa. A resposta vem com os próximos passos.</p>
+        <a href="https://wa.me/5532984255466" target="_blank" rel="noopener" class="btn btn-y">Falar no WhatsApp <span class="arr">↗</span></a>
+      </div>
+      <div class="final-tape" aria-hidden="true">
+        <b>///</b><svg viewBox="0 0 758 491"><use href="#vice-iso"/></svg><b>///</b><svg viewBox="0 0 758 491"><use href="#vice-iso"/></svg><b>///</b><svg viewBox="0 0 758 491"><use href="#vice-iso"/></svg><b>///</b><svg viewBox="0 0 758 491"><use href="#vice-iso"/></svg><b>///</b>
+      </div>
+    </div>
   </div>
 </section>
 </main>
@@ -805,16 +539,17 @@
   <div class="wrap">
     <div class="footer-grid">
       <div>
-        <div class="brand"><span class="dot"></span>Pedro Martins</div>
-        <p>Design estratégico para marcas que querem ser lembradas — identidade visual, sites e motion, do briefing ao lançamento.</p>
+        <a class="brand" href="#"><svg viewBox="0 0 758 491" aria-hidden="true"><use href="#vice-iso" fill="#EFE13E"/></svg><span>VICE CO <em>/ Pedro Martins</em></span></a>
+        <p>Identidade visual para negócios de qualquer segmento. Marca pensada para ser usada, não só apresentada.</p>
       </div>
       <div class="footer-col">
         <h4>Navegação</h4>
         <ul>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#processo">Processo</a></li>
-          <li><a href="#investimento">Investimento</a></li>
-          <li><a href="#faq">Dúvidas frequentes</a></li>
+          <li><a href="#servicos">O que fazemos</a></li>
+          <li><a href="#processo">Etapas</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#investimento">Planos</a></li>
+          <li><a href="https://www.behance.net/Pedrodesignn" target="_blank" rel="noopener">Portfólio</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -823,82 +558,67 @@
           <li><a href="tel:+5532984255466">(32) 98425-5466</a></li>
           <li><a href="https://www.instagram.com/ovisinario.br/" target="_blank" rel="noopener">Instagram</a></li>
           <li><a href="https://wa.me/5532984255466" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a href="https://www.behance.net/Pedrodesignn" target="_blank" rel="noopener">Behance</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 Pedro Martins. Todos os direitos reservados.</span>
-      <span><a href="privacidade.html">Política de privacidade</a> · Feito para transformar percepção em valor.</span>
+      <span>© 2026 VICE CO · Pedro Martins. Todos os direitos reservados.</span>
+      <span><a href="privacidade.html">Política de privacidade</a></span>
     </div>
   </div>
 </footer>
 
 <script>
+if(typeof gsap==="undefined"){document.querySelectorAll(".reveal").forEach(function(e){e.style.opacity=1});}
+else {
 gsap.registerPlugin(ScrollTrigger);
-
-var isMobile = window.matchMedia("(max-width: 768px)").matches;
 var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-var blurAmount = isMobile ? 0 : 8;
-var distance = isMobile ? 20 : 40;
+var d = window.matchMedia("(max-width: 768px)").matches ? 20 : 40;
 
 if(!reduceMotion){
+  gsap.fromTo("[data-reveal='hero']", { opacity:0, y:d }, { opacity:1, y:0, duration:.9, ease:"power3.out" });
+  gsap.from(".mega", { yPercent:30, opacity:0, duration:1, delay:.2, ease:"power3.out" });
 
-  // Hero entrance sequence
-  var heroTl = gsap.timeline({ defaults:{ ease:"power2.out" } });
-  heroTl.to("[data-reveal='hero']", {
-    opacity:1, y:0, filter:"blur(0px)",
-    duration:0.7, stagger:0.08,
-    from:{ y:distance, filter:"blur("+blurAmount+"px)" }
+  gsap.from(".hero-lead, .trust", { y:24, opacity:0, duration:.8, delay:.45, stagger:.12, ease:"power3.out" });
+  gsap.from(".hero-right > *", { y:30, opacity:0, duration:.8, delay:.35, stagger:.15, ease:"power3.out" });
+  gsap.from(".hero-visual svg", { scale:.85, rotate:-4, opacity:0, duration:1.1, delay:.5, ease:"power3.out" });
+  gsap.from(".tape", { xPercent:-8, opacity:0, duration:1, delay:.6, ease:"power3.out" });
+  document.querySelectorAll(".reveal-up").forEach(function(el){
+    gsap.from(el, { clipPath:"inset(0 0 100% 0)", y:30, duration:.9, ease:"power3.out", scrollTrigger:{ trigger:el, start:"top 85%", once:true } });
   });
-  gsap.set("[data-reveal='hero']", { y:distance, filter:"blur("+blurAmount+"px)" });
-  heroTl.to("[data-reveal='hero']", { opacity:1, y:0, filter:"blur(0px)", duration:0.7, stagger:0.08 }, 0);
-
-  gsap.set("[data-reveal='hero-visual']", { scale:0.9, filter:"blur("+blurAmount+"px)" });
-  gsap.to("[data-reveal='hero-visual']", { opacity:1, scale:1, filter:"blur(0px)", duration:0.9, delay:0.3, ease:"power2.out" });
-
-  // slow orb rotation
-  gsap.to(".orb-core", { rotate:360, duration:24, repeat:-1, ease:"none" });
-
-  // Scroll reveals per section
-  document.querySelectorAll("section, .sectors").forEach(function(sec){
-    var items = sec.querySelectorAll("[data-reveal='head'], [data-reveal='card'], [data-reveal='process']");
+  gsap.from(".founder-photo img", { scale:1.15, duration:1.4, ease:"power2.out", scrollTrigger:{ trigger:".founder", start:"top 75%", once:true } });
+  gsap.from(".stat .num", { y:20, opacity:0, duration:.6, stagger:.1, ease:"power2.out", scrollTrigger:{ trigger:".stats", start:"top 85%", once:true } });
+  document.querySelectorAll("section").forEach(function(sec){
+    var items = sec.querySelectorAll("[data-reveal='head'], [data-reveal='card']");
     if(!items.length) return;
-    gsap.set(items, { y:distance, filter:"blur("+blurAmount+"px)" });
+    gsap.set(items, { y:d });
     ScrollTrigger.create({
-      trigger: sec,
-      start: "top 80%",
-      once: true,
-      onEnter: function(){
-        gsap.to(items, {
-          opacity:1, y:0, filter:"blur(0px)",
-          duration:0.6, stagger:0.08, ease:"power2.out"
-        });
-      }
+      trigger: sec, start: "top 80%", once: true,
+      onEnter: function(){ gsap.to(items, { opacity:1, y:0, duration:.6, stagger:.08, ease:"power2.out" }); }
     });
   });
-
 } else {
   document.querySelectorAll(".reveal").forEach(function(el){ el.style.opacity = 1; });
 }
+}
 
-// FAQ accordion
 document.querySelectorAll(".faq-item").forEach(function(item){
-  var answer = item.querySelector(".faq-a");
-  item.addEventListener("click", function(){
+  var btn = item.querySelector(".faq-q"), answer = item.querySelector(".faq-a");
+  btn.addEventListener("click", function(){
     var isOpen = item.classList.contains("open");
     document.querySelectorAll(".faq-item.open").forEach(function(o){
       o.classList.remove("open");
-      o.querySelector(".faq-q").setAttribute("aria-expanded", "false");
+      o.querySelector(".faq-q").setAttribute("aria-expanded","false");
       o.querySelector(".faq-a").style.maxHeight = null;
     });
     if(!isOpen){
       item.classList.add("open");
-      item.querySelector(".faq-q").setAttribute("aria-expanded", "true");
+      btn.setAttribute("aria-expanded","true");
       answer.style.maxHeight = answer.scrollHeight + "px";
     }
   });
 });
 </script>
-
 </body>
 </html>
